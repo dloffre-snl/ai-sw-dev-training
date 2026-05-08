@@ -126,7 +126,7 @@ May 2026
 
 ---
 
-## Discussion
+## Ex 1 debrief
 
 - What went well?
 - What went poorly?
@@ -200,7 +200,7 @@ May 2026
 
 ---
 
-## MVP planning / co-design 
+## MVP planning demo (live)
 
 - TODO: Note to Daniel - I'm not sure how to capture a good example of this kind of conversation. Maybe a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
 - Does someone want to volunteer what their class project is?
@@ -426,6 +426,10 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
+## Break
+
+---
+
 ## Project ideas / datasets (if you don't have your own yet)
 
 DataSets:
@@ -452,6 +456,10 @@ Tasks:
 
 ---
 
+## End of day wrap-up
+
+---
+
 # Day 5
 
 ---
@@ -462,6 +470,10 @@ Tasks:
 - Catch up on anything we skipped or rushed through
 - 1:1 office hours with instructor
 - Cohort cross-pollination - see what others built, demo informally
+
+---
+
+## End of week wrap-up
 
 ---
 
