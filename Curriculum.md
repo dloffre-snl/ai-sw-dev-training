@@ -1,44 +1,49 @@
-
-
-- [ ] #dgl-todo run this through Claude to improve it and fill in some details
-
-
-# About 
-
-> I'm currently developing a course (really, an excuse to give people space to play with frontier agentic access) on software development with AI specific to VR use cases. Example: writing a VSCode plugin to solve some mission specific VR problem.
-## Software Development with AI: A VR/Software Understanding Focus
-
-Sandia's Vulnerability Research (VR) and Software Assessment activities span a wide spectrum from manual practice (VRDP) to cutting-edge automation research (Coyote, RAMSeS). While progress has been made in adopting AI for tool development, there’s a critical blind spot: leveraging AI for forward engineering workflows. This training aims to bridge that gap.
-
-This hands-on course will demystify existing forward engineering AI tools, empowering staff to intelligently automate parts of the VR process while maintaining manual practices where needed. Participants will gain practical experience using today’s frontier AI models and tools in a lab setting, enabling them to integrate these capabilities into their daily workflows.
-
-**Key Details:**
-
-- **Format:** 1 week of instruction + lab time, with an optional project week (project-funded).
-- **Audience:** Early adopters; limited to 10 participants.
-- **Focus:** Practical AI tool usage for R&D—not fundamentals of AI, security, or analyzing AI systems.
-- **Environment:** Open internet access to ensure exposure to the latest tools; all activities will be UUR.
-
-This course is distinct from other AI offerings by emphasizing hands-on development of new tools, rather than adapting to AI's presence in the wild.
-
-Ideal students are tool or script developers eager to leverage bleeding-edge techniques to enhance their productivity. **Students should arrive with a specific coding task in mind, to develop over the course of the training.** Given the rapid evolution of generative AI for software development, participants should be prepared to continue growing and adapting, applying new techniques to sponsor missions well beyond the conclusion of the course.
+---
+title: "Software Development with AI: A VR/Software Understanding Focus"
+author: Daniel Loffredo
+theme: uncover
+class:
+  - invert
+paginate: true
+size: 16:9
+transition: none
+style: "section {     font-size: 20px;   }"
+---
+# Software Development with AI: A VR/Software Understanding Focus
+Daniel Loffredo
+dloffre@sandia.gov
+May 2026
 
 ---
 
-![Waterfall-Agile-AI](images/Waterfall-Agile-AI.png)
+# TOC
+
+TODO linkify these
+
+* Day 1
+* Day 2
+* Day 3
+* Day 4-5
+* Advanced Topics
+* Other resources
 
 ---
 
 # Day 1
 
+![Waterfall-Agile-AI](images/Waterfall-Agile-AI.png)
+
+  
+---
+
 ## Intro
 
-* **_You are guinea pigs_ - this is an experience and I hope to get 51% of it right.**
-* Why are we here?
-* What's the deal with AI?
-* **Course constraints: UUR ONLY, no SRN, open internet.**  PROXY problems
+* **_You are guinea pigs_** - this is an _experience_ and I hope to get 51% of it right.
+	* Does someone mind keeping a notes doc with things that happened live that should have been in the course materials? 
+* **Course constraints: non-sensitive ONLY, no SRN, open internet.**  PROXY problems
 * This class will have lots of free exploration time - that's the main value of the course in fact!
 	* Usually at the end of the day, more as the week goes on
+	* By the end of the first week I hope you are all doing independent study while learning and collaborating with me / each other
 * Pie chart of value from this course
 	* 5% the exercises, course materials, what I have prepared to say
 	* 35% our discussions, the questions you ask, my knowledge and experience, the other participants' experiences
@@ -47,26 +52,42 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 * We will make time to chat about each person's project idea - let's collaborate, pair program, experiment together
 * We will discuss roadblocks and successes as a group 
 
+<!-- 
+
+* presenter notes look like this
+* second note
+
+-->
+
+
 ---
 
-## AI-assisted Coding - general notes
+## Orientation
 
-**General:**
+* Why are we here? - _Why are you here?_
+* What's the deal with AI? - _Why am I here?_
+	* This is the most exciting time to be computer scientist 
+	* Software development is my axe; sharpening my axe
+
+TODO:
+* TODO: how much of software is written by AI today?
 - Some news articles or stats or something about the rise of AI use in software development
 - Maybe an anecdote about AI making parsing library in 2 hours that would have taken a week to do by hand
+
+<!--
 - Screenshot of cursor showing what AI development looks like (prompt for a new feature, AI thinks for a while, walk through diff of changes to accept/modify)
 - Maybe a diagram instead? Showing user -> prompt -> AI coding tool -> queries -> AI model (LLM)
 - Want to draw a clear and visible distinction between the  AI model  and the  AI coding tool
-
+-->
 
 ---
 
-## AI-assisted Coding - opsec for this course
+## Opsec for this course
 
-**Security:**
+
 - For this course, we will be using the open internet (not SRN) and everything we do will be non-sensitive 
 - Don’t pull in in any CUI/OUO during this course
-- This workflow is not generally allowed at Sandia right now, so don’t go try to do it at your office ; we can discuss what is allowed live in the class
+- This workflow is not generally allowed at Sandia right now, so don’t go try to do it at your office 
 - We will talk more in the course about exactly what is allowed on Sandia networks and how you can make use of AI coding at Sandia
 - If you are unsure about something, feel free to ask!
 
@@ -86,12 +107,23 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 - Get your laptop from the bag of holding
 - Log into it,  WiFi , Cursor account, etc.
+- Providers/accounts for this course:
+	- Cursor (multiple backend models)
+	- Anthropic (Claude / Claude Code)
+	- OpenAI (ChatGPT / Codex)
+
+<!--
+* when to prefer one provider / model / harness over another
+-->
 
 ---
 
 ## First exercise: Vibe Coding in Cursor
 
-* See slides
+* See [Exercise 1](./exercises/1-VibeCoding.pptx)
+
+- “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
+
 * Bonus content for those that finish early: TODO
 	* Push the boundaries of what an LLM can do on its own
 	* Implement ... 
@@ -103,6 +135,7 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 * What went well?
 * What went poorly?
 * Any interesting findings or tricks applied?
+* TODO: find a spot for the computerphile metr video as well as the METR plot inline in the slides
 
 ---
 
@@ -110,10 +143,23 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 ---
 
-## Jupyter exercise 02 Tool Calls: What They Actually Are
+## Terminology
+
+* Model / LLM
+* Harness
+* Agent
+* Tool call
+* Skill
+* Prompt / System prompt
+* Context / Tokens 
+
+<!--
+* TODO include definitions of each of these  here in the speaker notes
+-->
 
 ---
-## Jupyter exercise 03 Prompt Engineering: Why It Works
+
+## Jupyter exercise 02 Tool Calls: What They Actually Are
 
 ---
 
@@ -131,7 +177,7 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 - Co-design: using ChatGPT to design an MVP, engineer prompt
 - Ask mode vs agent mode vs planning mode in Cursor
-- .cursorrules file
+- ~~.cursorrules file~~ AGENTS.md
 - Autocomplete mode: write in the codebase, see it finish for you
 - Try writing a comment to describe what you are about to do
 - Using git, don’t delete your project
@@ -146,12 +192,27 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 	- What happens when it gets full?
 
 
+* TODO include one of the software engineering videos here
+
+
+---
+
+## MVP planning / co-design 
+
+* TODO Note to Daniel: I'm not sure how to capture a good example of this kind of conversation – maybe this is a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Then you can show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
+
+
+* Does someone want to volunteer what their class project is? 
+* Let's open up ChatGPT and do an MVP design session
+	* Have it output an initial prompt for Cursor/Claude
+
 ---
 
 
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
-* See slides
+* See [Exercise 2](./exercises/2-BeyondVibes.pptx) 
+•The project these slides are working on is: building an interactive call graph visualizer for x86 binaries
 
 ---
 
@@ -165,11 +226,15 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 # Day 2
 
-## Jupyter exercise 04 What is chain of thought actually doing?
+## Jupyter exercise 04 Prompt Engineering: Why It Works
 
 ---
 
 ## Proper software engineering with AI
+
+
+* TODO: this list is maybe outdated / I don't know what to say to it.  Instead, I should make this a list of my best practices
+* TODO: include another software engineering video here
 
 - Prompt Engineering Lessons
 - Spec-driven engineering
@@ -189,7 +254,38 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 ## Third Exercise: Building Code to Last
 
-* See slides
+* TODO flesh out this exercise 
+
+
+•Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
+
+•Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
+* Does someone want to volunteer their class project? *
+
+•What would you do to help make AI-developed coding manageable?
+
+•Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
+
+•
+
+•
+
+•
+
+
+•For the third exercise, we will try this out as a class!
+
+•Everyone pull this git repo: blah
+
+•(What should the joint project be?)
+
+•First we will discuss a plan to delegate different pieces/tasks
+
+•
+
+•
+
+
 
 ---
 
@@ -223,11 +319,11 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 * LLM On Command Line
 - Claude
 - Claude can refer to both an AI model and an AI tool
-- Analysis-focused; using skill
+- Analysis-focused; using skills
 - ToB skills, etc.
 
 ---
-## Jupyter exercise 05 MCP: It's Just JSON-RPC
+## Jupyter exercise 03 MCP: It's Just JSON-RPC
 
 ---
 
@@ -236,6 +332,8 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 ---
 ## Opsec , security risks, mitigations
+
+* TODO flesh this slide out
 
 - Show  abox / shirty / claudecode  setup
 - Talk about what is allowed on SRN
@@ -247,13 +345,13 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 - Talk about local models ( roocode ,  continue.dev , cline)
 ---
 ## Trevor slides
-
+* TODO figure out how to handle Trevor's slides
+* 
+* 
 * [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
 ---
-## Jupyter exercise 06 Prompt/channel markers are in-band control data
 
----
-## Jupyter exercise 07  LLM Attacks & Security: What's Actually Happening
+## Jupyter exercise 05  LLM Attacks & Security: What's Actually Happening
 
 ---
 ## End of day wrap-up
@@ -262,6 +360,8 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 # Advanced Topics
 
+* TODO ideally I weave this into the days. For now we keep them here to make sure I don't forget
+
 * Code Mode vs MCP
 * Superpowers brainstorming/
 * Daniel's CLAUDE.md
@@ -269,7 +369,12 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 * API access vs Oauth access
 * OpenClaw
 
+---
+
 # Day 4-5 Proxy problem/project exploration
+
+---
+
 
 ## Project ideas / datasets
 
@@ -287,6 +392,7 @@ Tasks:
 * FuzzHarness for X
 * Control MineSweeper output
 
+---
 
 ## Misc discussion topics
 
@@ -305,7 +411,7 @@ Tasks:
 	 	4. massive public data sets
 	 	5. locality, modularity, abstraction
 	 	6. most code is structured repetition instead of novel algorithms
-* Bitter lesson paper
+* Bitter lesson paper ; skills as a temporary way to boost capability and removing them when detrimental
 * We get this progress for free with capitalist investment ; if we write our tools in a particular way
 * METR doubling paper
 * Agent engineering timeline
@@ -319,7 +425,11 @@ Tasks:
 * LLM/Agent as a new model of computation. It's our new interpreter
 	* To install your software, don't tell me what commands to run, give me a prompt I can paste into my agent
 
+---
+
 # Other resources
+---
+
 ## Videos
 
 * Playlist: [Daniel's AI Videos - YouTube](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
@@ -340,30 +450,25 @@ Tasks:
 * [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk - YouTube](https://www.youtube.com/watch?v=v4F1gFy-hqg)
 * [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub - YouTube](https://www.youtube.com/watch?v=ClWD8OEYgp8)
 	* build time shrink / plan time expand slides
+---
+
 ## Papers / articles
 
 * https://www.latent.space/p/2025-papers
 * https://simonwillison.net/series/prompt-injection/
 * [sketch blog: The Unreasonable Effectiveness of an LLM Agent Loop with Tool Use](https://sketch.dev/blog/agent-loop)
 	* [sketch.dev/blog/agent_loop.py](https://sketch.dev/blog/agent_loop.py)
+* https://simonwillison.net/guides/agentic-engineering-patterns/
 
-## Instructor resources
+---
 
-* [Scott's jupyter repo](https://cee-gitlab.sandia.gov/sheidbr/ai_eng_training)
-* [Tim's exercise slides](https://sandialabs-my.sharepoint.com/:p:/r/personal/tjloffr_sandia_gov/Documents/AI%20Course%20Dev.pptx?d=w462365504449416394e3a3046a171b41&e=4%3A7c702da98ddf47c4bc29d48ac758c0a0&sharingv2=true&fromShare=true)
-* Daniel: [AI Engineering for VR practitioners](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/SSU%202025%20Agent%20Engineering.pptx?d=w362d4d762a58411e9cb065949f1a5cd0&csf=1&web=1&e=akBIoo) (SSU agent engineering)
-* Daniel: [Embracing AI Agent Engineering](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/Agent%20Engineering%20April%202025.pptx?d=w1aa516e70b314cd980f7e09797e639a8&csf=1&web=1&e=FtbDWG) (April 2025)
-* Daniel: [Agent Engineering lessons learned](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/Agent%20Engineering%20Lessons.pptx?d=we69a504a9493485cae06744cb011a605&csf=1&web=1&e=oZEgBB)
+## Misc
+
 * Stanford AI Dev course
 	* [https://themodernsoftware.dev/](https://themodernsoftware.dev/)
 	* [[The Modern Software Developer]] (local)
-* P/T for prep/purchases: 6005 / 03.06.00.02.20
+* Daniel's claude setup skill: https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
 
+---
 
-
-
-
-* https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
-* https://simonwillison.net/guides/agentic-engineering-patterns/
-
-
+# Fin

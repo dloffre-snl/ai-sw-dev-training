@@ -1,1 +1,0 @@
-# ai-sw-dev-training
