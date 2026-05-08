@@ -116,16 +116,6 @@ May 2026
 
 ---
 
-## Your project: introductions
-
-- Each student: 1-2 minute intro of the project you brought
-	- What is it?
-	- Why does it matter to your work?
-	- What's the riskiest unknown?
-- We'll keep coming back to your project across the week
-
----
-
 ## First exercise: Vibe Coding in Cursor
 
 - See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
@@ -200,6 +190,16 @@ May 2026
 
 ---
 
+## Your project: introductions
+
+- Each student: 1-2 minute intro of the project you brought
+	- What is it?
+	- Why does it matter to your work?
+	- What's the riskiest unknown?
+- We'll keep coming back to your project across the week
+
+---
+
 ## MVP planning / co-design 
 
 - TODO: Note to Daniel - I'm not sure how to capture a good example of this kind of conversation. Maybe a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
@@ -238,17 +238,6 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 ---
 
 ## Jupyter exercise 04 Prompt Engineering: Why It Works
-
----
-
-## Your project: planning + MVP design
-
-- Each of you, with an AI co-designer: sketch your MVP
-	- What is the smallest version of the project that proves the idea?
-	- What inputs / outputs?
-	- What's explicitly out of scope for the MVP?
-- Output: a starting prompt for Cursor / Claude you'll refine across the week
-- We'll discuss volunteers' MVPs as a group
 
 ---
 
@@ -299,11 +288,29 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
+## Your project: planning + MVP design
+
+- Each of you, with an AI co-designer: sketch your MVP
+	- What is the smallest version of the project that proves the idea?
+	- What inputs / outputs?
+	- What's explicitly out of scope for the MVP?
+- Output: a starting prompt for Cursor / Claude you'll refine across the week
+- We'll discuss volunteers' MVPs as a group
+
+---
+
 ## End of day discussion
 
 ---
 
 # Day 3
+
+---
+
+## Success and Failure Stories
+
+- Success and failure stories
+- What has worked well, and what has not
 
 ---
 
@@ -354,18 +361,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
-## Your project: plan / begin implementation
-
-- Take everything you've learned this week so far and apply it to your project
-- Plan, scaffold, or begin implementation depending on where you are
-- Use the rest of the day to make real progress; ask for help freely
-
----
-
-## Success and Failure Stories
-
-- Success and failure stories
-- What has worked well, and what has not
+## Break
 
 ---
 
@@ -388,7 +384,11 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
-## Break
+## Your project: plan / begin implementation
+
+- Take everything you've learned this week so far and apply it to your project
+- Plan, scaffold, or begin implementation depending on where you are
+- Use the rest of the day to make real progress; ask for help freely
 
 ---
 
@@ -426,6 +426,24 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
+## Project ideas / datasets (if you don't have your own yet)
+
+DataSets:
+
+- OpenWRT; value add
+- APK / 2048
+- C#, Rust, Go
+- SmarterMail
+- dropbear
+
+Tasks:
+- setup frida
+- find valueadd in OpenWRT
+- FuzzHarness for X
+- Control MineSweeper output
+
+---
+
 ## Your project: build time
 
 - Continue project work
@@ -452,24 +470,6 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 - Project-funded second week
 - Full-time project work
 - Continue to use the cohort + instructor as a resource
-
----
-
-## Project ideas / datasets (if you don't have your own yet)
-
-DataSets:
-
-- OpenWRT; value add
-- APK / 2048
-- C#, Rust, Go
-- SmarterMail
-- dropbear
-
-Tasks:
-- setup frida
-- find valueadd in OpenWRT
-- FuzzHarness for X
-- Control MineSweeper output
 
 ---
 
