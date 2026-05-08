@@ -19,11 +19,13 @@ May 2026
 # TOC
 
 - TODO: linkify these
-- Day 1
-- Day 2
-- Day 3
-- Day 4-5
-- Advanced Topics
+- Day 1 - Frontier AI tools 101: vibe coding → AI-assisted SWE
+- Day 2 - Engineering discipline: prompts, specs, code that lasts
+- Day 3 - Method VR + skills you can take home
+- Day 4 - Security/attacks; project work
+- Day 5 - Catch-up + project time
+- Week 2 - Project deep-dive
+- Optional topics
 - Other resources
 
 ---
@@ -114,6 +116,16 @@ May 2026
 
 ---
 
+## Your project: introductions
+
+- Each student: 1-2 minute intro of the project you brought
+	- What is it?
+	- Why does it matter to your work?
+	- What's the riskiest unknown?
+- We'll keep coming back to your project across the week
+
+---
+
 ## First exercise: Vibe Coding in Cursor
 
 - See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
@@ -190,7 +202,7 @@ May 2026
 
 ## MVP planning / co-design 
 
-- TODO: Note to Daniel — I'm not sure how to capture a good example of this kind of conversation. Maybe a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
+- TODO: Note to Daniel - I'm not sure how to capture a good example of this kind of conversation. Maybe a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
 - Does someone want to volunteer what their class project is?
 - Let's open up ChatGPT and do an MVP design session
 	- Have it output an initial prompt for Cursor/Claude
@@ -216,7 +228,7 @@ May 2026
 ![Day-2-image](images/Day2.png)
 
 <!--
-TODO: drop in a meme/AI image here that maps to Day 2 themes — prompt
+TODO: drop in a meme/AI image here that maps to Day 2 themes - prompt
 engineering, building code to last, moving from vibes to disciplined SWE.
 Suggestions: a "Drake" meme (vibe coding rejected / prompt engineering
 embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
@@ -229,9 +241,20 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
+## Your project: planning + MVP design
+
+- Each of you, with an AI co-designer: sketch your MVP
+	- What is the smallest version of the project that proves the idea?
+	- What inputs / outputs?
+	- What's explicitly out of scope for the MVP?
+- Output: a starting prompt for Cursor / Claude you'll refine across the week
+- We'll discuss volunteers' MVPs as a group
+
+---
+
 ## Proper software engineering with AI
 
-- TODO: this list is maybe outdated / I don't know what to say to it. Instead, I should make this a list of my best practices
+- TODO: this list is maybe outdated / I don't know what to say to it. Instead, I should make this a list of my best practices (source: my CLAUDE.md / AGENTS.md - *don't* preemptively abstract, fail-fast errors, no speculative features, replace don't deprecate, etc.)
 - TODO: include another software engineering video here
 - Prompt Engineering Lessons
 - Spec-driven engineering
@@ -284,6 +307,61 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
+## Method VR - VR with AI in the thinking loop
+
+- A different style of AI/VR: human + AI co-construct understanding of the target through collaboration
+- VR is understanding a target well enough to break it. **Understanding compounds; findings do not.** The shareable artifact is the understanding itself
+- Two dividing lines:
+	- *Is the AI in the thinking loop with you?* - vs. AI as a function call you throw code at
+	- *Are you vibing?* - only inspecting behavior, never the artifact - vs. doing the work to build understanding
+- Hypothesis: the hardest targets / messiest CONOPS will require human-AI collaboration, not vibing
+- Reference: [Method VR (local notes)](extras/Method%20VR.md)
+
+---
+
+## Method VR scaffolding demo
+
+- Scaffold a new VR project from scratch, projected from the instructor laptop
+- Project structure (single git repo at the project root):
+	- `target/` - source code or artifacts under analysis
+	- `work/` - scripts, helper tools, intermediate investigation artifacts
+	- `wiki/` - finished and in-progress nuggets of understanding
+- `AGENTS.md` / `CLAUDE.md` - describe goal, target, and project structure so the AI starts grounded
+- Three parallel views: editor (VSCode) + Obsidian + AI harness (Claude Code / OpenCode)
+- One full cycle: ask → AI investigates → write to wiki → human reviews / corrects / grounds claims in source
+
+---
+
+## Skill install + play time
+
+- Install harness skills from [Daniel's VR starter kit](<extras/Daniel's VR starter kit.md>)
+	- `superpowers` (general workflow + brainstorming skills) - github.com/obra/superpowers
+	- ToB security skill: `audit-context-building` - github.com/trailofbits/skills
+	- Optionally browse the rest: `c-review`, `differential-review`, `semgrep-rule-creator`, `variant-analysis`, etc.
+- Free play: try them on a small sample target
+- Discussion: which felt useful? where did they break down?
+
+---
+
+## SKILL creation exercise
+
+- Now write your own `SKILL.md`
+- Two flavors:
+	- **Workflow capture** - you found something useful during play; write it up so the AI (and others) can reuse it
+	- **Tool wrapper** - wrap a tool or script you want exposed to the AI
+- Closes the loop with Method VR's "capture for compounding" - the goal is reusable practice, not one-off scripts
+- Reference: [skill-creator (Anthropic)](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
+
+---
+
+## Your project: plan / begin implementation
+
+- Take everything you've learned this week so far and apply it to your project
+- Plan, scaffold, or begin implementation depending on where you are
+- Use the rest of the day to make real progress; ask for help freely
+
+---
+
 ## Success and Failure Stories
 
 - Success and failure stories
@@ -300,14 +378,25 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 - Claude can refer to both an AI model and an AI tool
 - Analysis-focused; using skills
 - ToB skills, etc.
+- OpenClaw
 
 ---
 
 ## Jupyter exercise 03 MCP: It's Just JSON-RPC
 
+- Aside: Code Mode vs MCP - when raw code execution outperforms a structured tool protocol
+
 ---
 
 ## Break
+
+---
+
+## End of day wrap-up
+
+---
+
+# Day 4
 
 ---
 
@@ -322,6 +411,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
   - Dev tools running malicious commands on your machine (like we just gave it permission to do)
 - Figure out how to access Shirty in this environment (SRN laptop?)
 - Talk about local models (roocode, continue.dev, cline)
+- API access vs OAuth access (which auth model lets you use which tools at Sandia)
 
 ---
 
@@ -336,27 +426,36 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
-## End of day wrap-up
+## Your project: build time
+
+- Continue project work
+- Drop in for help / pair programming as needed
+- Surface roadblocks for the group - chances are someone else is hitting the same wall
 
 ---
 
-# Advanced Topics
-
-- TODO: ideally I weave this into the days. For now we keep them here to make sure I don't forget
-- Code Mode vs MCP
-- Superpowers brainstorming/
-- Daniel's CLAUDE.md
-	- Preemptive abstractions, etc
-- API access vs Oauth access
-- OpenClaw
+# Day 5
 
 ---
 
-# Day 4-5 Proxy problem/project exploration
+## Catch-up + project time
+
+- Free working time
+- Catch up on anything we skipped or rushed through
+- 1:1 office hours with instructor
+- Cohort cross-pollination - see what others built, demo informally
 
 ---
 
-## Project ideas / datasets
+# Week 2 - Project deep-dive
+
+- Project-funded second week
+- Full-time project work
+- Continue to use the cohort + instructor as a resource
+
+---
+
+## Project ideas / datasets (if you don't have your own yet)
 
 DataSets:
 
@@ -374,6 +473,22 @@ Tasks:
 
 ---
 
+# Optional topics
+
+<!--
+Future overflow / deep-dive topics that don't fit into the day flow.
+Items previously here have been folded in:
+  - Code Mode vs MCP -> Day 3, MCP Jupyter aside
+  - Superpowers brainstorming -> Day 3, Skill install + play
+  - Daniel's CLAUDE.md / AGENTS.md best practices -> Day 2, Proper SWE slide (source material for the best-practices list)
+  - API access vs OAuth access -> Day 4, Opsec slide
+  - OpenClaw -> Day 3, Play time slide
+-->
+
+- (placeholder - drop deep-dive topics here as they come up)
+
+---
+
 # Other resources
 
 ---
@@ -381,17 +496,17 @@ Tasks:
 ## Videos
 
 - Playlist: [Daniel's AI Videos](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
-- [The AI Revolution Is Underhyped — Eric Schmidt, TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
-- [AI's Version of Moore's Law? — Computerphile](https://www.youtube.com/watch?v=evSFeqTZdqs) (see also [Measuring AI Ability to Complete Long Tasks — METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/))
-- [Autoresearch, Agent Loops and the Future of Work](https://www.youtube.com/watch?v=nt9j1k2IhUY) — *"closing the loop"*
-- [Don't Build Agents, Build Skills Instead — Barry Zhang & Mahesh Murag, Anthropic](https://www.youtube.com/watch?v=CEvIs9y1uog)
-- [Does AI Actually Boost Developer Productivity? (100k Devs Study) — Yegor Denisov-Blanch, Stanford](https://www.youtube.com/watch?v=tbDDYKRFjhk)
-- [No Vibes Allowed: Solving Hard Problems in Complex Codebases — Dex Horthy, HumanLayer](https://www.youtube.com/watch?v=rmvDxxNubIg) — *"don't outsource the thinking"*
-- [Rethinking how we Scaffold AI Agents — Rahul Sengottuvelu, Ramp](https://www.youtube.com/watch?v=-rsTkYgnNzM)
-- [How We Build Effective Agents — Barry Zhang, Anthropic](https://www.youtube.com/watch?v=D7_ipDqhtwk)
-- [Black-hat LLMs — Nicholas Carlini, [un]prompted 2026](https://www.youtube.com/watch?v=1sd26pWhfmg)
-- [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero](https://www.youtube.com/watch?v=v4F1gFy-hqg)
-- [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub](https://www.youtube.com/watch?v=ClWD8OEYgp8) — *build-time shrink / plan-time expand slides*
+- [The AI Revolution Is Underhyped - Eric Schmidt, TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
+- [AI's Version of Moore's Law? - Computerphile](https://www.youtube.com/watch?v=evSFeqTZdqs) (see also [Measuring AI Ability to Complete Long Tasks - METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/))
+- [Autoresearch, Agent Loops and the Future of Work](https://www.youtube.com/watch?v=nt9j1k2IhUY) - *"closing the loop"*
+- [Don't Build Agents, Build Skills Instead - Barry Zhang & Mahesh Murag, Anthropic](https://www.youtube.com/watch?v=CEvIs9y1uog)
+- [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford](https://www.youtube.com/watch?v=tbDDYKRFjhk)
+- [No Vibes Allowed: Solving Hard Problems in Complex Codebases - Dex Horthy, HumanLayer](https://www.youtube.com/watch?v=rmvDxxNubIg) - *"don't outsource the thinking"*
+- [Rethinking how we Scaffold AI Agents - Rahul Sengottuvelu, Ramp](https://www.youtube.com/watch?v=-rsTkYgnNzM)
+- [How We Build Effective Agents - Barry Zhang, Anthropic](https://www.youtube.com/watch?v=D7_ipDqhtwk)
+- [Black-hat LLMs - Nicholas Carlini, [un]prompted 2026](https://www.youtube.com/watch?v=1sd26pWhfmg)
+- [It Ain't Broke: Why Software Fundamentals Matter More Than Ever - Matt Pocock, AI Hero](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+- [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment - Maggie Appleton, GitHub](https://www.youtube.com/watch?v=ClWD8OEYgp8) - *build-time shrink / plan-time expand slides*
 
 ---
 
