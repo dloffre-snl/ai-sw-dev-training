@@ -77,7 +77,7 @@ TODO:
 <!--
 - Screenshot of cursor showing what AI development looks like (prompt for a new feature, AI thinks for a while, walk through diff of changes to accept/modify)
 - Maybe a diagram instead? Showing user -> prompt -> AI coding tool -> queries -> AI model (LLM)
-- Want to draw a clear and visible distinction between the  AI model  and the  AI coding tool
+- Want to draw a clear and visible distinction between the AI model and the AI coding tool
 -->
 
 ---
@@ -86,7 +86,7 @@ TODO:
 
 
 - For this course, we will be using the open internet (not SRN) and everything we do will be non-sensitive 
-- Don’t pull in in any CUI/OUO during this course
+- Don’t pull in any CUI/OUO during this course
 - This workflow is not generally allowed at Sandia right now, so don’t go try to do it at your office 
 - We will talk more in the course about exactly what is allowed on Sandia networks and how you can make use of AI coding at Sandia
 - If you are unsure about something, feel free to ask!
@@ -106,7 +106,7 @@ TODO:
 ## Environment set up
 
 - Get your laptop from the bag of holding
-- Log into it,  WiFi , Cursor account, etc.
+- Log into it, WiFi, Cursor account, etc.
 - Providers/accounts for this course:
 	- Cursor (multiple backend models)
 	- Anthropic (Claude / Claude Code)
@@ -120,7 +120,7 @@ TODO:
 
 ## First exercise: Vibe Coding in Cursor
 
-- See [Exercise 1](1-VibeCoding.pptx)
+- See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
 
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
 
@@ -183,7 +183,7 @@ TODO:
 - Using git, don’t delete your project
 - Stopping the AI when it is going down the wrong path
 - Ask it a question about the project (”how does this work?”) and see how well it knows the codebase
-	- You can also ask it for help about it’s own codebase: “where is the parsing for import tables?”
+	- You can also ask it for help about its own codebase: “where is the parsing for import tables?”
 - Ask it for a new feature
 	- See what it does
 - Context window
@@ -211,8 +211,8 @@ TODO:
 
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
-- See [Exercise 2](2-BeyondVibes.pptx) 
-•The project these slides are working on is: building an interactive call graph visualizer for x86 binaries
+- See [Exercise 2](cursor_exercises/2-BeyondVibes.pptx)
+- The project these slides are working on is: building an interactive call graph visualizer for x86 binaries
 
 ---
 
@@ -225,6 +225,18 @@ TODO:
 
 
 # Day 2
+
+![Day-2-image](images/Day2.png)
+
+<!--
+TODO: drop in a meme/AI image here that maps to Day 2 themes — prompt
+engineering, building code to last, moving from vibes to disciplined SWE.
+Suggestions: a "Drake" meme (vibe coding rejected / prompt engineering
+embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
+"expectation vs reality of AI-generated code" image. Save as images/Day2.png.
+-->
+
+---
 
 ## Jupyter exercise 04 Prompt Engineering: Why It Works
 
@@ -240,12 +252,12 @@ TODO:
 - Spec-driven engineering
 - unit and system tests
 - Let the AI debug itself
-- Github   SpecKit ?
+- GitHub SpecKit?
 - Providing information from online (e.g. website for JVM spec)
 - Refactoring slop
 - Changing the model (Opus 4.6 vs Sonnet vs other stuff)
 - Agents
-- - Multi-agent swarm mode?
+	- Multi-agent swarm mode?
 - Writing server/clients that interact with each other
 - UI development with Canva, Figma, JS/HTML
 - Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
@@ -254,36 +266,17 @@ TODO:
 
 ## Third Exercise: Building Code to Last
 
-- TODO flesh out this exercise 
+- TODO flesh out this exercise
 
-
-•Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
-
-•Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
-- Does someone want to volunteer their class project? *
-
-•What would you do to help make AI-developed coding manageable?
-
-•Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
-
-•
-
-•
-
-•
-
-
-•For the third exercise, we will try this out as a class!
-
-•Everyone pull this git repo: blah
-
-•(What should the joint project be?)
-
-•First we will discuss a plan to delegate different pieces/tasks
-
-•
-
-•
+- Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
+- Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
+- Does someone want to volunteer their class project?
+- What would you do to help make AI-developed coding manageable?
+- Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
+- For the third exercise, we will try this out as a class!
+- Everyone pull this git repo: blah
+- (What should the joint project be?)
+- First we will discuss a plan to delegate different pieces/tasks
 
 
 
@@ -331,27 +324,25 @@ TODO:
 ## Break
 
 ---
-## Opsec , security risks, mitigations
+## Opsec, security risks, mitigations
 
 - TODO flesh this slide out
 
-- Show  abox / shirty / claudecode  setup
+- Show abox / shirty / claudecode setup
 - Talk about what is allowed on SRN
 - One thing is copy/paste into Sandia AI
 - Two Concerns
   - CUI/OUO/sensitive data being sent to off-site models
   - Dev tools running malicious commands on your machine (like we just gave it permission to do)
-- Figure out how to access  Shirty  in this environment (SRN laptop?)
-- Talk about local models ( roocode ,  continue.dev , cline)
+- Figure out how to access Shirty in this environment (SRN laptop?)
+- Talk about local models (roocode, continue.dev, cline)
 ---
 ## Trevor slides
 - TODO figure out how to handle Trevor's slides
-- 
-- 
 - [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
 ---
 
-## Jupyter exercise 05  LLM Attacks & Security: What's Actually Happening
+## Jupyter exercise 05 LLM Attacks & Security: What's Actually Happening
 
 ---
 ## End of day wrap-up
@@ -434,11 +425,11 @@ Tasks:
 
 - Stanford AI Dev course
 	- [https://themodernsoftware.dev/](https://themodernsoftware.dev/)
-	- [[The Modern Software Developer]] (local)
+	- [The Modern Software Developer (local notes)](extras/The%20Modern%20Software%20Developer.md)
 - Daniel's claude setup skill: https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
-- [[Method VR]]
-- [[Daniel's VR starter kit]]
-- [[Misc discussion topics]]
+- [Method VR](extras/Method%20VR.md)
+- [Daniel's VR starter kit](<extras/Daniel's VR starter kit.md>)
+- [Misc discussion topics](extras/Misc%20discussion%20topics.md)
 
 
 
