@@ -1,0 +1,369 @@
+
+
+- [ ] #dgl-todo run this through Claude to improve it and fill in some details
+
+
+# About 
+
+> I'm currently developing a course (really, an excuse to give people space to play with frontier agentic access) on software development with AI specific to VR use cases. Example: writing a VSCode plugin to solve some mission specific VR problem.
+## Software Development with AI: A VR/Software Understanding Focus
+
+Sandia's Vulnerability Research (VR) and Software Assessment activities span a wide spectrum from manual practice (VRDP) to cutting-edge automation research (Coyote, RAMSeS). While progress has been made in adopting AI for tool development, there’s a critical blind spot: leveraging AI for forward engineering workflows. This training aims to bridge that gap.
+
+This hands-on course will demystify existing forward engineering AI tools, empowering staff to intelligently automate parts of the VR process while maintaining manual practices where needed. Participants will gain practical experience using today’s frontier AI models and tools in a lab setting, enabling them to integrate these capabilities into their daily workflows.
+
+**Key Details:**
+
+- **Format:** 1 week of instruction + lab time, with an optional project week (project-funded).
+- **Audience:** Early adopters; limited to 10 participants.
+- **Focus:** Practical AI tool usage for R&D—not fundamentals of AI, security, or analyzing AI systems.
+- **Environment:** Open internet access to ensure exposure to the latest tools; all activities will be UUR.
+
+This course is distinct from other AI offerings by emphasizing hands-on development of new tools, rather than adapting to AI's presence in the wild.
+
+Ideal students are tool or script developers eager to leverage bleeding-edge techniques to enhance their productivity. **Students should arrive with a specific coding task in mind, to develop over the course of the training.** Given the rapid evolution of generative AI for software development, participants should be prepared to continue growing and adapting, applying new techniques to sponsor missions well beyond the conclusion of the course.
+
+---
+
+![[Waterfall-Agile-AI.png]]
+
+---
+
+# Day 1
+
+## Intro
+
+* **_You are guinea pigs_ - this is an experience and I hope to get 51% of it right.**
+* Why are we here?
+* What's the deal with AI?
+* **Course constraints: UUR ONLY, no SRN, open internet.**  PROXY problems
+* This class will have lots of free exploration time - that's the main value of the course in fact!
+	* Usually at the end of the day, more as the week goes on
+* Pie chart of value from this course
+	* 5% the exercises, course materials, what I have prepared to say
+	* 35% our discussions, the questions you ask, my knowledge and experience, the other participants' experiences
+	* 60% the accounts, laptops, frontier access, time to learn and play away from distractions
+* My goal is to spend the first couple days getting you going and then treat this like a workshop
+* We will make time to chat about each person's project idea - let's collaborate, pair program, experiment together
+* We will discuss roadblocks and successes as a group 
+
+---
+
+## AI-assisted Coding - general notes
+
+**General:**
+- Some news articles or stats or something about the rise of AI use in software development
+- Maybe an anecdote about AI making parsing library in 2 hours that would have taken a week to do by hand
+- Screenshot of cursor showing what AI development looks like (prompt for a new feature, AI thinks for a while, walk through diff of changes to accept/modify)
+- Maybe a diagram instead? Showing user -> prompt -> AI coding tool -> queries -> AI model (LLM)
+- Want to draw a clear and visible distinction between the  AI model  and the  AI coding tool
+
+
+---
+
+## AI-assisted Coding - opsec for this course
+
+**Security:**
+- For this course, we will be using the open internet (not SRN) and everything we do will be non-sensitive 
+- Don’t pull in in any CUI/OUO during this course
+- This workflow is not generally allowed at Sandia right now, so don’t go try to do it at your office ; we can discuss what is allowed live in the class
+- We will talk more in the course about exactly what is allowed on Sandia networks and how you can make use of AI coding at Sandia
+- If you are unsure about something, feel free to ask!
+
+---
+
+## What is Vibe Coding
+
+- What is vibe coding?
+- You tell the AI what you want, it writes the code for you.
+- The less you interact with the actual code, the more “vibey” it is.
+- This is a spectrum.
+- Our first exercise will be a vibe coding exercise with Cursor.
+- Experience the joys and pains!
+
+---
+## Environment set up
+
+- Get your laptop from the bag of holding
+- Log into it,  WiFi , Cursor account, etc.
+
+---
+
+## First exercise: Vibe Coding in Cursor
+
+* See slides
+* Bonus content for those that finish early: TODO
+	* Push the boundaries of what an LLM can do on its own
+	* Implement ... 
+
+---
+
+## Discussion
+
+* What went well?
+* What went poorly?
+* Any interesting findings or tricks applied?
+
+---
+
+## Break
+
+---
+
+## Jupyter exercise 02 Tool Calls: What They Actually Are
+
+---
+## Jupyter exercise 03 Prompt Engineering: Why It Works
+
+---
+
+## Discussion: Regaining control of the output
+
+- What kinds of tasks can an LLM perform well?
+	- Defining the task precisely, leaving no ambiguity
+- What size of task can an LLM perform well?
+	- Scoping down and being incremental
+- What tricks have you tried to get better code out of the LLM?
+
+---
+
+## AI-Assisted Development Tips
+
+- Co-design: using ChatGPT to design an MVP, engineer prompt
+- Ask mode vs agent mode vs planning mode in Cursor
+- .cursorrules file
+- Autocomplete mode: write in the codebase, see it finish for you
+- Try writing a comment to describe what you are about to do
+- Using git, don’t delete your project
+- Stopping the AI when it is going down the wrong path
+- Ask it a question about the project (”how does this work?”) and see how well it knows the codebase
+	- You can also ask it for help about it’s own codebase: “where is the parsing for import tables?”
+- Ask it for a new feature
+	- See what it does
+- Context window
+	- What is it?
+	- How do you put things in it?
+	- What happens when it gets full?
+
+
+---
+
+
+## Second Exercise: Beyond Vibes - AI-Assisted Development
+
+* See slides
+
+---
+
+## End of day Vibe Check
+
+- How many tokens have we used?
+- How much `$$$` have we used?
+
+---
+
+
+# Day 2
+
+## Jupyter exercise 04 What is chain of thought actually doing?
+
+---
+
+## Proper software engineering with AI
+
+- Prompt Engineering Lessons
+- Spec-driven engineering
+- unit and system tests
+- Let the AI debug itself
+- Github   SpecKit ?
+- Providing information from online (e.g. website for JVM spec)
+- Refactoring slop
+- Changing the model (Opus 4.6 vs Sonnet vs other stuff)
+- Agents
+- - Multi-agent swarm mode?
+- Writing server/clients that interact with each other
+- UI development with Canva, Figma, JS/HTML
+- Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
+
+---
+
+## Third Exercise: Building Code to Last
+
+* See slides
+
+---
+
+## Break
+
+---
+
+## Jupyter exercise 01 RAG Under the Covers
+
+---
+
+## Third Exercise: Building Code to Last (continuation)
+
+---
+
+## End of day discussion 
+
+
+# Day 3
+
+## Success and Failure Stories
+
+- Success and failure stories
+- What has worked well, and what has not
+
+---
+## Play time: beyond Cursor; MCP, Claude, Copilot
+
+* Set up an MCP in Cursor
+* Set up Claude or Opencode
+* LLM On Command Line
+- Claude
+- Claude can refer to both an AI model and an AI tool
+- Analysis-focused; using skill
+- ToB skills, etc.
+
+---
+## Jupyter exercise 05 MCP: It's Just JSON-RPC
+
+---
+
+
+## Break
+
+---
+## Opsec , security risks, mitigations
+
+- Show  abox / shirty / claudecode  setup
+- Talk about what is allowed on SRN
+- One thing is copy/paste into Sandia AI
+- Two Concerns
+  - CUI/OUO/sensitive data being sent to off-site models
+  - Dev tools running malicious commands on your machine (like we just gave it permission to do)
+- Figure out how to access  Shirty  in this environment (SRN laptop?)
+- Talk about local models ( roocode ,  continue.dev , cline)
+---
+## Trevor slides
+
+* [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
+---
+## Jupyter exercise 06 Prompt/channel markers are in-band control data
+
+---
+## Jupyter exercise 07  LLM Attacks & Security: What's Actually Happening
+
+---
+## End of day wrap-up
+
+---
+
+# Advanced Topics
+
+* Code Mode vs MCP
+* Superpowers brainstorming/
+* Daniel's CLAUDE.md
+	* Preemptive abstractions, etc
+* API access vs Oauth access
+* OpenClaw
+
+# Day 4-5 Proxy problem/project exploration
+
+## Project ideas / datasets
+
+DataSets:
+
+* OpenWRT; value add
+* APK / 2048
+* C#, Rust, Go
+* SmarterMail
+* dropbear
+
+Tasks:
+* setup frida
+* find valueadd in OpenWRT
+* FuzzHarness for X
+* Control MineSweeper output
+
+
+## Misc discussion topics
+
+* Predictions:
+    - To everyone’s surprise one of the first things that LLMs are going to obsolete is software engineering. LLMs can write software as good as we can. We thought it would be something else like data entry or customer service but it was sweng. So swengs are going to move up the ladder to be “directors” of agents.
+    - There’s a trajectory we can look at with SwEng for how fast things became automated and imagine that for other similar fields, like CNO
+* Code as a unifying layer for knowledge work:
+    - A couple years ago we had LLMs generate creative content and it was fun but not very good. We thought what would be obsolete was television and movie writers first.
+    - Then we improved how well LLMs can generate code and it was dominant. 
+    - Now how do we do the same for other knowledge work? We have to train and make special tools like claude code for lawyers, right?
+    - But it turns out code writing is THE skill required for automating a lot of knowledge work. So claude code is a general purpose thing that can be used for a lot of knowledge work.
+- Why did LLMs achieve dominance in coding first?
+	 	1. structured language is catnip for LLMs
+	 	2. culture of tool adoption
+	 	3. ease of verification / evaluation
+	 	4. massive public data sets
+	 	5. locality, modularity, abstraction
+	 	6. most code is structured repetition instead of novel algorithms
+* Bitter lesson paper
+* We get this progress for free with capitalist investment ; if we write our tools in a particular way
+* METR doubling paper
+* Agent engineering timeline
+	* Frameworks, MCP, Skills, Claws
+* “It’s like having a fast junior developer who needs supervision; you remain responsible for ensuring the code works correctly.”
+* VR, RE, System Understanding
+	* Trends and accomplishments
+	* Think about what a single malicious actor can do now that they couldn't before
+	* What's Sandia's role?
+* "You can outsource your thinking but you can't outsource your understanding"
+* LLM/Agent as a new model of computation. It's our new interpreter
+	* To install your software, don't tell me what commands to run, give me a prompt I can paste into my agent
+
+# Other resources
+## Videos
+
+* Playlist: [Daniel's AI Videos - YouTube](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
+
+
+* [The AI Revolution Is Underhyped | Eric Schmidt | TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
+* [AI's Version of Moore's Law? - Computerphile - YouTube](https://www.youtube.com/watch?v=evSFeqTZdqs)
+	* [Measuring AI Ability to Complete Long Tasks - METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
+* [Autoresearch, Agent Loops and the Future of Work - YouTube](https://www.youtube.com/watch?v=nt9j1k2IhUY)
+	* "Closing the loop"
+* [Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic - YouTube](https://www.youtube.com/watch?v=CEvIs9y1uog)
+* [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford - YouTube](https://www.youtube.com/watch?v=tbDDYKRFjhk)
+* [No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer - YouTube](https://www.youtube.com/watch?v=rmvDxxNubIg)
+	* Don't outsource the thinking
+* [Rethinking how we Scaffold AI Agents - Rahul Sengottuvelu, Ramp - YouTube](https://www.youtube.com/watch?v=-rsTkYgnNzM)
+* [How We Build Effective Agents: Barry Zhang, Anthropic - YouTube](https://www.youtube.com/watch?v=D7_ipDqhtwk)
+* [Nicholas Carlini - Black-hat LLMs | [un]prompted 2026 - YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg)
+* [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk - YouTube](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+* [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub - YouTube](https://www.youtube.com/watch?v=ClWD8OEYgp8)
+	* build time shrink / plan time expand slides
+## Papers / articles
+
+* https://www.latent.space/p/2025-papers
+* https://simonwillison.net/series/prompt-injection/
+* [sketch blog: The Unreasonable Effectiveness of an LLM Agent Loop with Tool Use](https://sketch.dev/blog/agent-loop)
+	* [sketch.dev/blog/agent_loop.py](https://sketch.dev/blog/agent_loop.py)
+
+## Instructor resources
+
+* [Scott's jupyter repo](https://cee-gitlab.sandia.gov/sheidbr/ai_eng_training)
+* [Tim's exercise slides](https://sandialabs-my.sharepoint.com/:p:/r/personal/tjloffr_sandia_gov/Documents/AI%20Course%20Dev.pptx?d=w462365504449416394e3a3046a171b41&e=4%3A7c702da98ddf47c4bc29d48ac758c0a0&sharingv2=true&fromShare=true)
+* Daniel: [AI Engineering for VR practitioners](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/SSU%202025%20Agent%20Engineering.pptx?d=w362d4d762a58411e9cb065949f1a5cd0&csf=1&web=1&e=akBIoo) (SSU agent engineering)
+* Daniel: [Embracing AI Agent Engineering](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/Agent%20Engineering%20April%202025.pptx?d=w1aa516e70b314cd980f7e09797e639a8&csf=1&web=1&e=FtbDWG) (April 2025)
+* Daniel: [Agent Engineering lessons learned](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/Agent%20Engineering%20Lessons.pptx?d=we69a504a9493485cae06744cb011a605&csf=1&web=1&e=oZEgBB)
+* Stanford AI Dev course
+	* [https://themodernsoftware.dev/](https://themodernsoftware.dev/)
+	* [[The Modern Software Developer]] (local)
+* P/T for prep/purchases: 6005 / 03.06.00.02.20
+
+
+
+
+
+* https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
+* https://simonwillison.net/guides/agentic-engineering-patterns/
+
+
