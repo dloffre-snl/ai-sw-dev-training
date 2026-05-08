@@ -18,8 +18,7 @@ May 2026
 
 # TOC
 
-TODO: linkify these
-
+- TODO: linkify these
 - Day 1
 - Day 2
 - Day 3
@@ -59,16 +58,14 @@ TODO: linkify these
 
 -->
 
-
 ---
 
 ## Orientation
 
 - Why are we here? - _Why are you here?_
 - What's the deal with AI? - _Why am I here?_
-	- This is the most exciting time to be computer scientist 
+	- This is the most exciting time to be computer scientist
 	- Software development is my axe; sharpening my axe
-
 - TODO: how much of software is written by AI today?
 - TODO: news articles or stats about the rise of AI use in software development
 - TODO: anecdote about AI making a parsing library in 2 hours that would have taken a week by hand
@@ -83,8 +80,7 @@ TODO: linkify these
 
 ## Opsec for this course
 
-
-- For this course, we will be using the open internet (not SRN) and everything we do will be non-sensitive 
+- For this course, we will be using the open internet (not SRN) and everything we do will be non-sensitive
 - Don’t pull in any CUI/OUO during this course
 - This workflow is not generally allowed at Sandia right now, so don’t go try to do it at your office 
 - We will talk more in the course about exactly what is allowed on Sandia networks and how you can make use of AI coding at Sandia
@@ -102,6 +98,7 @@ TODO: linkify these
 - Experience the joys and pains!
 
 ---
+
 ## Environment set up
 
 - Get your laptop from the bag of holding
@@ -200,7 +197,6 @@ TODO: linkify these
 
 ---
 
-
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
 - See [Exercise 2](cursor_exercises/2-BeyondVibes.pptx)
@@ -214,7 +210,6 @@ TODO: linkify these
 - How much `$$$` have we used?
 
 ---
-
 
 # Day 2
 
@@ -235,7 +230,6 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 ---
 
 ## Proper software engineering with AI
-
 
 - TODO: this list is maybe outdated / I don't know what to say to it. Instead, I should make this a list of my best practices
 - TODO: include another software engineering video here
@@ -268,8 +262,6 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 - (What should the joint project be?)
 - First we will discuss a plan to delegate different pieces/tasks
 
-
-
 ---
 
 ## Break
@@ -298,6 +290,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 - What has worked well, and what has not
 
 ---
+
 ## Play time: beyond Cursor; MCP, Claude, Copilot
 
 - Set up an MCP in Cursor
@@ -309,14 +302,15 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 - ToB skills, etc.
 
 ---
+
 ## Jupyter exercise 03 MCP: It's Just JSON-RPC
 
 ---
 
-
 ## Break
 
 ---
+
 ## Opsec, security risks, mitigations
 
 - TODO: flesh this slide out
@@ -328,15 +322,20 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
   - Dev tools running malicious commands on your machine (like we just gave it permission to do)
 - Figure out how to access Shirty in this environment (SRN laptop?)
 - Talk about local models (roocode, continue.dev, cline)
+
 ---
+
 ## Trevor slides
+
 - TODO: figure out how to handle Trevor's slides
-- [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
+- [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay
+
 ---
 
 ## Jupyter exercise 05 LLM Attacks & Security: What's Actually Happening
 
 ---
+
 ## End of day wrap-up
 
 ---
@@ -357,7 +356,6 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
-
 ## Project ideas / datasets
 
 DataSets:
@@ -376,37 +374,33 @@ Tasks:
 
 ---
 
-
 # Other resources
+
 ---
 
 ## Videos
 
-- Playlist: [Daniel's AI Videos - YouTube](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
-- [The AI Revolution Is Underhyped | Eric Schmidt | TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
-- [AI's Version of Moore's Law? - Computerphile - YouTube](https://www.youtube.com/watch?v=evSFeqTZdqs)
-	- [Measuring AI Ability to Complete Long Tasks - METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
-- [Autoresearch, Agent Loops and the Future of Work - YouTube](https://www.youtube.com/watch?v=nt9j1k2IhUY)
-	- "Closing the loop"
-- [Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic - YouTube](https://www.youtube.com/watch?v=CEvIs9y1uog)
-- [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford - YouTube](https://www.youtube.com/watch?v=tbDDYKRFjhk)
-- [No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer - YouTube](https://www.youtube.com/watch?v=rmvDxxNubIg)
-	- Don't outsource the thinking
-- [Rethinking how we Scaffold AI Agents - Rahul Sengottuvelu, Ramp - YouTube](https://www.youtube.com/watch?v=-rsTkYgnNzM)
-- [How We Build Effective Agents: Barry Zhang, Anthropic - YouTube](https://www.youtube.com/watch?v=D7_ipDqhtwk)
-- [Nicholas Carlini - Black-hat LLMs | [un]prompted 2026 - YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg)
-- [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk - YouTube](https://www.youtube.com/watch?v=v4F1gFy-hqg)
-- [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub - YouTube](https://www.youtube.com/watch?v=ClWD8OEYgp8)
-	- build time shrink / plan time expand slides
+- Playlist: [Daniel's AI Videos](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
+- [The AI Revolution Is Underhyped — Eric Schmidt, TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
+- [AI's Version of Moore's Law? — Computerphile](https://www.youtube.com/watch?v=evSFeqTZdqs) (see also [Measuring AI Ability to Complete Long Tasks — METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/))
+- [Autoresearch, Agent Loops and the Future of Work](https://www.youtube.com/watch?v=nt9j1k2IhUY) — *"closing the loop"*
+- [Don't Build Agents, Build Skills Instead — Barry Zhang & Mahesh Murag, Anthropic](https://www.youtube.com/watch?v=CEvIs9y1uog)
+- [Does AI Actually Boost Developer Productivity? (100k Devs Study) — Yegor Denisov-Blanch, Stanford](https://www.youtube.com/watch?v=tbDDYKRFjhk)
+- [No Vibes Allowed: Solving Hard Problems in Complex Codebases — Dex Horthy, HumanLayer](https://www.youtube.com/watch?v=rmvDxxNubIg) — *"don't outsource the thinking"*
+- [Rethinking how we Scaffold AI Agents — Rahul Sengottuvelu, Ramp](https://www.youtube.com/watch?v=-rsTkYgnNzM)
+- [How We Build Effective Agents — Barry Zhang, Anthropic](https://www.youtube.com/watch?v=D7_ipDqhtwk)
+- [Black-hat LLMs — Nicholas Carlini, [un]prompted 2026](https://www.youtube.com/watch?v=1sd26pWhfmg)
+- [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+- [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub](https://www.youtube.com/watch?v=ClWD8OEYgp8) — *build-time shrink / plan-time expand slides*
+
 ---
 
 ## Papers / articles
 
-- https://www.latent.space/p/2025-papers
-- https://simonwillison.net/series/prompt-injection/
-- [sketch blog: The Unreasonable Effectiveness of an LLM Agent Loop with Tool Use](https://sketch.dev/blog/agent-loop)
-	- [sketch.dev/blog/agent_loop.py](https://sketch.dev/blog/agent_loop.py)
-- https://simonwillison.net/guides/agentic-engineering-patterns/
+- [Latent Space: 2025 papers roundup](https://www.latent.space/p/2025-papers)
+- [Simon Willison: prompt injection series](https://simonwillison.net/series/prompt-injection/)
+- [Simon Willison: agentic engineering patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
+- [Sketch: The Unreasonable Effectiveness of an LLM Agent Loop with Tool Use](https://sketch.dev/blog/agent-loop) (full agent loop in [agent_loop.py](https://sketch.dev/blog/agent_loop.py))
 
 ---
 
@@ -415,12 +409,10 @@ Tasks:
 - Stanford AI Dev course
 	- [https://themodernsoftware.dev/](https://themodernsoftware.dev/)
 	- [The Modern Software Developer (local notes)](extras/The%20Modern%20Software%20Developer.md)
-- Daniel's claude setup skill: https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
+- [Daniel's claude setup skill](https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md)
 - [Method VR](extras/Method%20VR.md)
 - [Daniel's VR starter kit](<extras/Daniel's VR starter kit.md>)
 - [Misc discussion topics](extras/Misc%20discussion%20topics.md)
-
-
 
 ---
 
