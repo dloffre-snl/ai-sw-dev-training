@@ -18,7 +18,7 @@ May 2026
 
 # TOC
 
-TODO linkify these
+TODO: linkify these
 
 - Day 1
 - Day 2
@@ -69,10 +69,9 @@ TODO linkify these
 	- This is the most exciting time to be computer scientist 
 	- Software development is my axe; sharpening my axe
 
-TODO:
 - TODO: how much of software is written by AI today?
-- Some news articles or stats or something about the rise of AI use in software development
-- Maybe an anecdote about AI making parsing library in 2 hours that would have taken a week to do by hand
+- TODO: news articles or stats about the rise of AI use in software development
+- TODO: anecdote about AI making a parsing library in 2 hours that would have taken a week by hand
 
 <!--
 - Screenshot of cursor showing what AI development looks like (prompt for a new feature, AI thinks for a while, walk through diff of changes to accept/modify)
@@ -121,12 +120,10 @@ TODO:
 ## First exercise: Vibe Coding in Cursor
 
 - See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
-
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
-
-- Bonus content for those that finish early: TODO
+- TODO: Bonus content for those that finish early
 	- Push the boundaries of what an LLM can do on its own
-	- Implement ... 
+	- Implement ...
 
 ---
 
@@ -154,7 +151,7 @@ TODO:
 - Context / Tokens 
 
 <!--
-- TODO include definitions of each of these  here in the speaker notes
+- TODO: include definitions of each of these here in the speaker notes
 -->
 
 ---
@@ -190,19 +187,14 @@ TODO:
 	- What is it?
 	- How do you put things in it?
 	- What happens when it gets full?
-
-
-- TODO include one of the software engineering videos here
-
+- TODO: include one of the software engineering videos here
 
 ---
 
 ## MVP planning / co-design 
 
-- TODO Note to Daniel: I'm not sure how to capture a good example of this kind of conversation – maybe this is a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Then you can show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
-
-
-- Does someone want to volunteer what their class project is? 
+- TODO: Note to Daniel — I'm not sure how to capture a good example of this kind of conversation. Maybe a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
+- Does someone want to volunteer what their class project is?
 - Let's open up ChatGPT and do an MVP design session
 	- Have it output an initial prompt for Cursor/Claude
 
@@ -245,9 +237,8 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 ## Proper software engineering with AI
 
 
-- TODO: this list is maybe outdated / I don't know what to say to it.  Instead, I should make this a list of my best practices
+- TODO: this list is maybe outdated / I don't know what to say to it. Instead, I should make this a list of my best practices
 - TODO: include another software engineering video here
-
 - Prompt Engineering Lessons
 - Spec-driven engineering
 - unit and system tests
@@ -266,8 +257,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ## Third Exercise: Building Code to Last
 
-- TODO flesh out this exercise
-
+- TODO: flesh out this exercise
 - Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
 - Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
 - Does someone want to volunteer their class project?
@@ -294,10 +284,13 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
-## End of day discussion 
+## End of day discussion
 
+---
 
 # Day 3
+
+---
 
 ## Success and Failure Stories
 
@@ -326,8 +319,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 ---
 ## Opsec, security risks, mitigations
 
-- TODO flesh this slide out
-
+- TODO: flesh this slide out
 - Show abox / shirty / claudecode setup
 - Talk about what is allowed on SRN
 - One thing is copy/paste into Sandia AI
@@ -338,7 +330,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 - Talk about local models (roocode, continue.dev, cline)
 ---
 ## Trevor slides
-- TODO figure out how to handle Trevor's slides
+- TODO: figure out how to handle Trevor's slides
 - [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
 ---
 
@@ -351,8 +343,7 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 # Advanced Topics
 
-- TODO ideally I weave this into the days. For now we keep them here to make sure I don't forget
-
+- TODO: ideally I weave this into the days. For now we keep them here to make sure I don't forget
 - Code Mode vs MCP
 - Superpowers brainstorming/
 - Daniel's CLAUDE.md
@@ -392,8 +383,6 @@ Tasks:
 ## Videos
 
 - Playlist: [Daniel's AI Videos - YouTube](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
-
-
 - [The AI Revolution Is Underhyped | Eric Schmidt | TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
 - [AI's Version of Moore's Law? - Computerphile - YouTube](https://www.youtube.com/watch?v=evSFeqTZdqs)
 	- [Measuring AI Ability to Complete Long Tasks - METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
