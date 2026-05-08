@@ -20,12 +20,12 @@ May 2026
 
 TODO linkify these
 
-* Day 1
-* Day 2
-* Day 3
-* Day 4-5
-* Advanced Topics
-* Other resources
+- Day 1
+- Day 2
+- Day 3
+- Day 4-5
+- Advanced Topics
+- Other resources
 
 ---
 
@@ -38,24 +38,24 @@ TODO linkify these
 
 ## Intro
 
-* **_You are guinea pigs_** - this is an _experience_ and I hope to get 51% of it right.
-	* Does someone mind keeping a notes doc with things that happened live that should have been in the course materials? 
-* **Course constraints: non-sensitive ONLY, no SRN, open internet.**  PROXY problems
-* This class will have lots of free exploration time - that's the main value of the course in fact!
-	* Usually at the end of the day, more as the week goes on
-	* By the end of the first week I hope you are all doing independent study while learning and collaborating with me / each other
-* Pie chart of value from this course
-	* 5% the exercises, course materials, what I have prepared to say
-	* 35% our discussions, the questions you ask, my knowledge and experience, the other participants' experiences
-	* 60% the accounts, laptops, frontier access, time to learn and play away from distractions
-* My goal is to spend the first couple days getting you going and then treat this like a workshop
-* We will make time to chat about each person's project idea - let's collaborate, pair program, experiment together
-* We will discuss roadblocks and successes as a group 
+- **_You are guinea pigs_** - this is an _experience_ and I hope to get 51% of it right.
+	- Does someone mind keeping a notes doc with things that happened live that should have been in the course materials? 
+- **Course constraints: non-sensitive ONLY, no SRN, open internet.**  PROXY problems
+- This class will have lots of free exploration time - that's the main value of the course in fact!
+	- Usually at the end of the day, more as the week goes on
+	- By the end of the first week I hope you are all doing independent study while learning and collaborating with me / each other
+- Pie chart of value from this course
+	- 5% the exercises, course materials, what I have prepared to say
+	- 35% our discussions, the questions you ask, my knowledge and experience, the other participants' experiences
+	- 60% the accounts, laptops, frontier access, time to learn and play away from distractions
+- My goal is to spend the first couple days getting you going and then treat this like a workshop
+- We will make time to chat about each person's project idea - let's collaborate, pair program, experiment together
+- We will discuss roadblocks and successes as a group 
 
 <!-- 
 
-* presenter notes look like this
-* second note
+- presenter notes look like this
+- second note
 
 -->
 
@@ -64,13 +64,13 @@ TODO linkify these
 
 ## Orientation
 
-* Why are we here? - _Why are you here?_
-* What's the deal with AI? - _Why am I here?_
-	* This is the most exciting time to be computer scientist 
-	* Software development is my axe; sharpening my axe
+- Why are we here? - _Why are you here?_
+- What's the deal with AI? - _Why am I here?_
+	- This is the most exciting time to be computer scientist 
+	- Software development is my axe; sharpening my axe
 
 TODO:
-* TODO: how much of software is written by AI today?
+- TODO: how much of software is written by AI today?
 - Some news articles or stats or something about the rise of AI use in software development
 - Maybe an anecdote about AI making parsing library in 2 hours that would have taken a week to do by hand
 
@@ -113,29 +113,29 @@ TODO:
 	- OpenAI (ChatGPT / Codex)
 
 <!--
-* when to prefer one provider / model / harness over another
+- when to prefer one provider / model / harness over another
 -->
 
 ---
 
 ## First exercise: Vibe Coding in Cursor
 
-* See [Exercise 1](1-VibeCoding.pptx)
+- See [Exercise 1](1-VibeCoding.pptx)
 
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
 
-* Bonus content for those that finish early: TODO
-	* Push the boundaries of what an LLM can do on its own
-	* Implement ... 
+- Bonus content for those that finish early: TODO
+	- Push the boundaries of what an LLM can do on its own
+	- Implement ... 
 
 ---
 
 ## Discussion
 
-* What went well?
-* What went poorly?
-* Any interesting findings or tricks applied?
-* TODO: find a spot for the computerphile metr video as well as the METR plot inline in the slides
+- What went well?
+- What went poorly?
+- Any interesting findings or tricks applied?
+- TODO: find a spot for the computerphile metr video as well as the METR plot inline in the slides
 
 ---
 
@@ -145,16 +145,16 @@ TODO:
 
 ## Terminology
 
-* Model / LLM
-* Harness
-* Agent
-* Tool call
-* Skill
-* Prompt / System prompt
-* Context / Tokens 
+- Model / LLM
+- Harness
+- Agent
+- Tool call
+- Skill
+- Prompt / System prompt
+- Context / Tokens 
 
 <!--
-* TODO include definitions of each of these  here in the speaker notes
+- TODO include definitions of each of these  here in the speaker notes
 -->
 
 ---
@@ -192,26 +192,26 @@ TODO:
 	- What happens when it gets full?
 
 
-* TODO include one of the software engineering videos here
+- TODO include one of the software engineering videos here
 
 
 ---
 
 ## MVP planning / co-design 
 
-* TODO Note to Daniel: I'm not sure how to capture a good example of this kind of conversation – maybe this is a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Then you can show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
+- TODO Note to Daniel: I'm not sure how to capture a good example of this kind of conversation – maybe this is a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Then you can show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
 
 
-* Does someone want to volunteer what their class project is? 
-* Let's open up ChatGPT and do an MVP design session
-	* Have it output an initial prompt for Cursor/Claude
+- Does someone want to volunteer what their class project is? 
+- Let's open up ChatGPT and do an MVP design session
+	- Have it output an initial prompt for Cursor/Claude
 
 ---
 
 
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
-* See [Exercise 2](2-BeyondVibes.pptx) 
+- See [Exercise 2](2-BeyondVibes.pptx) 
 •The project these slides are working on is: building an interactive call graph visualizer for x86 binaries
 
 ---
@@ -233,8 +233,8 @@ TODO:
 ## Proper software engineering with AI
 
 
-* TODO: this list is maybe outdated / I don't know what to say to it.  Instead, I should make this a list of my best practices
-* TODO: include another software engineering video here
+- TODO: this list is maybe outdated / I don't know what to say to it.  Instead, I should make this a list of my best practices
+- TODO: include another software engineering video here
 
 - Prompt Engineering Lessons
 - Spec-driven engineering
@@ -254,13 +254,13 @@ TODO:
 
 ## Third Exercise: Building Code to Last
 
-* TODO flesh out this exercise 
+- TODO flesh out this exercise 
 
 
 •Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
 
 •Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
-* Does someone want to volunteer their class project? *
+- Does someone want to volunteer their class project? *
 
 •What would you do to help make AI-developed coding manageable?
 
@@ -314,9 +314,9 @@ TODO:
 ---
 ## Play time: beyond Cursor; MCP, Claude, Copilot
 
-* Set up an MCP in Cursor
-* Set up Claude or Opencode
-* LLM On Command Line
+- Set up an MCP in Cursor
+- Set up Claude or Opencode
+- LLM On Command Line
 - Claude
 - Claude can refer to both an AI model and an AI tool
 - Analysis-focused; using skills
@@ -333,7 +333,7 @@ TODO:
 ---
 ## Opsec , security risks, mitigations
 
-* TODO flesh this slide out
+- TODO flesh this slide out
 
 - Show  abox / shirty / claudecode  setup
 - Talk about what is allowed on SRN
@@ -345,10 +345,10 @@ TODO:
 - Talk about local models ( roocode ,  continue.dev , cline)
 ---
 ## Trevor slides
-* TODO figure out how to handle Trevor's slides
-* 
-* 
-* [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
+- TODO figure out how to handle Trevor's slides
+- 
+- 
+- [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay 
 ---
 
 ## Jupyter exercise 05  LLM Attacks & Security: What's Actually Happening
@@ -360,14 +360,14 @@ TODO:
 
 # Advanced Topics
 
-* TODO ideally I weave this into the days. For now we keep them here to make sure I don't forget
+- TODO ideally I weave this into the days. For now we keep them here to make sure I don't forget
 
-* Code Mode vs MCP
-* Superpowers brainstorming/
-* Daniel's CLAUDE.md
-	* Preemptive abstractions, etc
-* API access vs Oauth access
-* OpenClaw
+- Code Mode vs MCP
+- Superpowers brainstorming/
+- Daniel's CLAUDE.md
+	- Preemptive abstractions, etc
+- API access vs Oauth access
+- OpenClaw
 
 ---
 
@@ -380,17 +380,17 @@ TODO:
 
 DataSets:
 
-* OpenWRT; value add
-* APK / 2048
-* C#, Rust, Go
-* SmarterMail
-* dropbear
+- OpenWRT; value add
+- APK / 2048
+- C#, Rust, Go
+- SmarterMail
+- dropbear
 
 Tasks:
-* setup frida
-* find valueadd in OpenWRT
-* FuzzHarness for X
-* Control MineSweeper output
+- setup frida
+- find valueadd in OpenWRT
+- FuzzHarness for X
+- Control MineSweeper output
 
 ---
 
@@ -400,45 +400,45 @@ Tasks:
 
 ## Videos
 
-* Playlist: [Daniel's AI Videos - YouTube](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
+- Playlist: [Daniel's AI Videos - YouTube](https://www.youtube.com/playlist?list=PLXdnjErEE4gStE5-PxLQDiveJtIfIekSP)
 
 
-* [The AI Revolution Is Underhyped | Eric Schmidt | TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
-* [AI's Version of Moore's Law? - Computerphile - YouTube](https://www.youtube.com/watch?v=evSFeqTZdqs)
-	* [Measuring AI Ability to Complete Long Tasks - METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
-* [Autoresearch, Agent Loops and the Future of Work - YouTube](https://www.youtube.com/watch?v=nt9j1k2IhUY)
-	* "Closing the loop"
-* [Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic - YouTube](https://www.youtube.com/watch?v=CEvIs9y1uog)
-* [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford - YouTube](https://www.youtube.com/watch?v=tbDDYKRFjhk)
-* [No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer - YouTube](https://www.youtube.com/watch?v=rmvDxxNubIg)
-	* Don't outsource the thinking
-* [Rethinking how we Scaffold AI Agents - Rahul Sengottuvelu, Ramp - YouTube](https://www.youtube.com/watch?v=-rsTkYgnNzM)
-* [How We Build Effective Agents: Barry Zhang, Anthropic - YouTube](https://www.youtube.com/watch?v=D7_ipDqhtwk)
-* [Nicholas Carlini - Black-hat LLMs | [un]prompted 2026 - YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg)
-* [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk - YouTube](https://www.youtube.com/watch?v=v4F1gFy-hqg)
-* [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub - YouTube](https://www.youtube.com/watch?v=ClWD8OEYgp8)
-	* build time shrink / plan time expand slides
+- [The AI Revolution Is Underhyped | Eric Schmidt | TED](https://www.youtube.com/watch?v=id4YRO7G0wE)
+- [AI's Version of Moore's Law? - Computerphile - YouTube](https://www.youtube.com/watch?v=evSFeqTZdqs)
+	- [Measuring AI Ability to Complete Long Tasks - METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
+- [Autoresearch, Agent Loops and the Future of Work - YouTube](https://www.youtube.com/watch?v=nt9j1k2IhUY)
+	- "Closing the loop"
+- [Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic - YouTube](https://www.youtube.com/watch?v=CEvIs9y1uog)
+- [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford - YouTube](https://www.youtube.com/watch?v=tbDDYKRFjhk)
+- [No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer - YouTube](https://www.youtube.com/watch?v=rmvDxxNubIg)
+	- Don't outsource the thinking
+- [Rethinking how we Scaffold AI Agents - Rahul Sengottuvelu, Ramp - YouTube](https://www.youtube.com/watch?v=-rsTkYgnNzM)
+- [How We Build Effective Agents: Barry Zhang, Anthropic - YouTube](https://www.youtube.com/watch?v=D7_ipDqhtwk)
+- [Nicholas Carlini - Black-hat LLMs | [un]prompted 2026 - YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg)
+- [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk - YouTube](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+- [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment — Maggie Appleton, GitHub - YouTube](https://www.youtube.com/watch?v=ClWD8OEYgp8)
+	- build time shrink / plan time expand slides
 ---
 
 ## Papers / articles
 
-* https://www.latent.space/p/2025-papers
-* https://simonwillison.net/series/prompt-injection/
-* [sketch blog: The Unreasonable Effectiveness of an LLM Agent Loop with Tool Use](https://sketch.dev/blog/agent-loop)
-	* [sketch.dev/blog/agent_loop.py](https://sketch.dev/blog/agent_loop.py)
-* https://simonwillison.net/guides/agentic-engineering-patterns/
+- https://www.latent.space/p/2025-papers
+- https://simonwillison.net/series/prompt-injection/
+- [sketch blog: The Unreasonable Effectiveness of an LLM Agent Loop with Tool Use](https://sketch.dev/blog/agent-loop)
+	- [sketch.dev/blog/agent_loop.py](https://sketch.dev/blog/agent_loop.py)
+- https://simonwillison.net/guides/agentic-engineering-patterns/
 
 ---
 
 ## Misc
 
-* Stanford AI Dev course
-	* [https://themodernsoftware.dev/](https://themodernsoftware.dev/)
-	* [[The Modern Software Developer]] (local)
-* Daniel's claude setup skill: https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
-* [[Method VR]]
-* [[Daniel's VR starter kit]]
-* [[Misc discussion topics]]
+- Stanford AI Dev course
+	- [https://themodernsoftware.dev/](https://themodernsoftware.dev/)
+	- [[The Modern Software Developer]] (local)
+- Daniel's claude setup skill: https://github.com/DLthree/claude-setup/blob/main/dloffre-claude-setup/references/claude-md.md
+- [[Method VR]]
+- [[Daniel's VR starter kit]]
+- [[Misc discussion topics]]
 
 
 
