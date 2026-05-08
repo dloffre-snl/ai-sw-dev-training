@@ -25,7 +25,7 @@ Ideal students are tool or script developers eager to leverage bleeding-edge tec
 
 ---
 
-![[images/Waterfall-Agile-AI.png]]
+![Waterfall-Agile-AI](images/Waterfall-Agile-AI.png)
 
 ---
 
