@@ -1,0 +1,8 @@
+openai
+numpy
+langchain
+langchain-text-splitters
+langchain_openai
+sentence_transformers
+mcp
+mlx-lm

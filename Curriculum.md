@@ -120,7 +120,7 @@ TODO:
 
 ## First exercise: Vibe Coding in Cursor
 
-* See [Exercise 1](./exercises/1-VibeCoding.pptx)
+* See [Exercise 1](1-VibeCoding.pptx)
 
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
 
@@ -211,7 +211,7 @@ TODO:
 
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
-* See [Exercise 2](./exercises/2-BeyondVibes.pptx) 
+* See [Exercise 2](2-BeyondVibes.pptx) 
 •The project these slides are working on is: building an interactive call graph visualizer for x86 binaries
 
 ---
