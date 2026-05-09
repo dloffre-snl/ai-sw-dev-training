@@ -186,6 +186,10 @@ May 2026
 	- What is it?
 	- How do you put things in it?
 	- What happens when it gets full?
+- Context window management
+	- handoff document
+	- /clear /compact
+	- when to start new sessions
 - TODO: include one of the software engineering videos here
 
 ---
@@ -474,6 +478,11 @@ Tasks:
 ---
 
 ## End of week wrap-up
+
+- TODO: Feedback form link 
+  - fill out today if you're not here next week
+  - fill out near the end of next week
+- What would you like to see different next week?
 
 ---
 
