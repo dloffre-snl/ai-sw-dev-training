@@ -38,18 +38,14 @@ May 2026
 ## Intro
 
 - **_You are guinea pigs_** - this is an _experience_ and I hope to get 51% of it right.
-	- Does someone mind keeping a notes doc with things that happened live that should have been in the course materials? 
-- **Course constraints: non-sensitive ONLY, no SRN, open internet.**  PROXY problems
 - This class will have lots of free exploration time - that's the main value of the course in fact!
 	- Usually at the end of the day, more as the week goes on
 	- By the end of the first week I hope you are all doing independent study while learning and collaborating with me / each other
-- Pie chart of value from this course
-	- 5% the exercises, course materials, what I have prepared to say
-	- 35% our discussions, the questions you ask, my knowledge and experience, the other participants' experiences
-	- 60% the accounts, laptops, frontier access, time to learn and play away from distractions
 - My goal is to spend the first couple days getting you going and then treat this like a workshop
 - We will make time to chat about each person's project idea - let's collaborate, pair program, experiment together
 - We will discuss roadblocks and successes as a group 
+
+_Does someone mind keeping a notes doc with things that happened live that should have been in the course materials?_
 
 <!-- 
 
@@ -60,29 +56,39 @@ May 2026
 
 ---
 
+## Caveat
+
+Pie chart of value from this course:
+
+- 5% the exercises, course materials, what I have prepared to say
+- 35% our discussions, the questions you ask, my knowledge and experience, the other participants' experiences
+- 60% the accounts, laptops, frontier access, time to learn and play away from distractions
+
+
+---
+
 ## Orientation
 
-- Why are we here? - _Why are you here?_
 - What's the deal with AI? - _Why am I here?_
 	- This is the most exciting time to be computer scientist
 	- Software development is my axe; sharpening my axe
-- TODO: how much of software is written by AI today?
-- TODO: news articles or stats about the rise of AI use in software development
-- TODO: anecdote about AI making a parsing library in 2 hours that would have taken a week by hand
+- Why are we here? - _Why are you here?_
+- Conflicting perspectives
+	- **Google**: ~75% of new code is AI-generated, up from 25% 18 months prior ([Sundar Pichai, early 2026](https://www.humanreadable-ai.com/google-ai-generated-code-explained/))
+	- [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford](https://www.youtube.com/watch?v=tbDDYKRFjhk)
 
 <!--
-- Screenshot of cursor showing what AI development looks like (prompt for a new feature, AI thinks for a while, walk through diff of changes to accept/modify)
-- Maybe a diagram instead? Showing user -> prompt -> AI coding tool -> queries -> AI model (LLM)
-- Want to draw a clear and visible distinction between the AI model and the AI coding tool
+
 -->
 
 ---
 
 ## Opsec for this course
 
+- **Course constraints: non-sensitive ONLY, no SRN, open internet.**  PROXY problems
 - For this course, we will be using the open internet (not SRN) and everything we do will be non-sensitive
 - Don’t pull in any CUI/OUO during this course
-- This workflow is not generally allowed at Sandia right now, so don’t go try to do it at your office 
+- This workflow is not generally allowed on the SRN right now, so don’t go try to do it at your office 
 - We will talk more in the course about exactly what is allowed on Sandia networks and how you can make use of AI coding at Sandia
 - If you are unsure about something, feel free to ask!
 
@@ -93,7 +99,7 @@ May 2026
 - What is vibe coding?
 - You tell the AI what you want, it writes the code for you.
 - The less you interact with the actual code, the more “vibey” it is.
-- This is a spectrum.
+- This is a spectrum. 
 - Our first exercise will be a vibe coding exercise with Cursor.
 - Experience the joys and pains!
 
@@ -109,7 +115,6 @@ May 2026
 	- OpenAI (ChatGPT / Codex)
 
 <!--
-- when to prefer one provider / model / harness over another
 -->
 
 ---
@@ -142,7 +147,7 @@ May 2026
 
 ![w:900](images/metr-time-horizons.png)
 
-- [Computerphile: AI's Version of Moore's Law?](https://www.youtube.com/watch?v=evSFeqTZdqs)
+- Watch video: [Computerphile: AI's Version of Moore's Law?](https://www.youtube.com/watch?v=evSFeqTZdqs)
 
 <!--
 - The canonical "AI is improving fast" exhibit: 50%-reliability task length doubling roughly every 7 months
@@ -154,6 +159,8 @@ May 2026
 ## METR: Mythos preview update
 
 ![w:900](images/metr-mythos.png)
+
+- The updated chart: 7 month doubling time has accelerated
 
 <!--
 - Latest update (May 2026): Claude Mythos preview pushes past 16-hour task horizons - the upper bound METR can currently measure
@@ -203,31 +210,47 @@ May 2026
 ## AI-Assisted Development Tips
 
 - Co-design: using ChatGPT to design an MVP, engineer prompt
+- `.cursorrules`, `CLAUDE.md`, `AGENTS.md`
+- Using git to manage and review AI changes
+- Re-starting the session when the AI is going down the wrong path
+
+---
+
+## Agent modes
+
 - Ask mode vs agent mode vs planning mode in Cursor
-- ~~.cursorrules file~~ AGENTS.md
-- Autocomplete mode: write in the codebase, see it finish for you
-- Try writing a comment to describe what you are about to do
-- Using git, don’t delete your project
-- Stopping the AI when it is going down the wrong path
 - Ask it a question about the project (”how does this work?”) and see how well it knows the codebase
 	- You can also ask it for help about its own codebase: “where is the parsing for import tables?”
-- Ask it for a new feature
-	- See what it does
+- Autocomplete mode: write in the codebase, see it finish for you
+	- Try writing a comment to describe what you are about to do
+
+
+---
+
+## Context engineering
+
 - Context window
 	- What is it?
 	- How do you put things in it?
 	- What happens when it gets full?
 - Context window management
 	- handoff document
-	- /clear /compact
+	- `/clear` `/compact`
 	- when to start new sessions
-- TODO: include one of the software engineering videos here
+
 
 ---
 
+
+## Second Exercise: Beyond Vibes - AI-Assisted Development
+
+- See [Exercise 2](cursor_exercises/2-BeyondVibes.pptx)
+- Build an interactive call graph visualizer for x86 binaries
+
+---
 ## Your project: introductions
 
-- Each student: 1-2 minute intro of the project you brought
+- Each student: couple minute intro of the project you brought
 	- What is it?
 	- Why does it matter to your work?
 	- What's the riskiest unknown?
@@ -235,19 +258,11 @@ May 2026
 
 ---
 
-## MVP planning demo (live)
+## MVP live planning demo
 
-- TODO: Note to Daniel - I'm not sure how to capture a good example of this kind of conversation. Maybe a good candidate for something you could do LIVE ("we'll do it LIVE!") projecting from the instructor's laptop? Show a back-and-forth and maybe custom tailor it to something one of the students wants to work on
 - Does someone want to volunteer what their class project is?
 - Let's open up ChatGPT and do an MVP design session
 	- Have it output an initial prompt for Cursor/Claude
-
----
-
-## Second Exercise: Beyond Vibes - AI-Assisted Development
-
-- See [Exercise 2](cursor_exercises/2-BeyondVibes.pptx)
-- The project these slides are working on is: building an interactive call graph visualizer for x86 binaries
 
 ---
 
@@ -267,6 +282,31 @@ May 2026
 ## Jupyter exercise 04 Prompt Engineering: Why It Works
 
 ---
+
+
+## Proper software engineering with AI: topic list
+
+- TDD - test driven development
+	- Red/Green TDD
+- Give the AI the ability to see what is happening in the code and iteratively debug the code
+- Linting and unit tests
+- Change the model based on task complexity
+- Different agentic engineering styles
+
+---
+
+## Agentic engineering styles
+
+- Vibe coding
+- Plan mode
+- Research, Plan, Implement
+- Spec driven development
+- Multi-agent swarm mode
+- Watch video: [No Vibes Allowed: Solving Hard Problems in Complex Codebases - Dex Horthy, HumanLayer](https://www.youtube.com/watch?v=rmvDxxNubIg) 
+
+
+---
+
 
 ## Best practices I encode in CLAUDE.md
 
@@ -289,28 +329,11 @@ May 2026
 
 ---
 
-## Proper software engineering with AI
-
-- TODO: include another software engineering video here
-- Prompt Engineering Lessons
-- Spec-driven engineering
-- unit and system tests
-- Let the AI debug itself
-- GitHub SpecKit?
-- Providing information from online (e.g. website for JVM spec)
-- Refactoring slop
-- Changing the model (Opus 4.6 vs Sonnet vs other stuff)
-- Agents
-	- Multi-agent swarm mode?
-- Writing server/clients that interact with each other
-- UI development with Canva, Figma, JS/HTML
-- Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
-
----
 
 ## Third Exercise: Building Code to Last
 
 - TODO: flesh out this exercise
+- Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
 - Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
 - Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
 - Does someone want to volunteer their class project?
@@ -327,6 +350,15 @@ May 2026
 
 ---
 
+
+## SWE video
+
+- Watch video: [It Ain't Broke: Why Software Fundamentals Matter More Than Ever - Matt Pocock, AI Hero](https://www.youtube.com/watch?v=v4F1gFy-hqg)
+
+
+---
+
+
 ## Jupyter exercise 01 RAG Under the Covers
 
 ---
@@ -341,8 +373,14 @@ May 2026
 	- What is the smallest version of the project that proves the idea?
 	- What inputs / outputs?
 	- What's explicitly out of scope for the MVP?
-- Output: a starting prompt for Cursor / Claude you'll refine across the week
+- Output: a starting prompt for Cursor / Claude
 - We'll discuss volunteers' MVPs as a group
+
+---
+## How development has changed
+
+- TODO: *build-time shrink / plan-time expand slides* - screenshots
+- Optional video: [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment - Maggie Appleton, GitHub](https://www.youtube.com/watch?v=ClWD8OEYgp8) 
 
 ---
 
@@ -363,34 +401,25 @@ May 2026
 
 ---
 
-## Method VR - VR with AI in the thinking loop
+## Play time: beyond Cursor; MCP, Claude, Codex
 
-- A different style of AI/VR: human + AI co-construct understanding of the target through collaboration
-- VR is understanding a target well enough to break it. **Understanding compounds; findings do not.** The shareable artifact is the understanding itself
-- Two dividing lines:
-	- *Is the AI in the thinking loop with you?* - vs. AI as a function call you throw code at
-	- *Are you vibing?* - only inspecting behavior, never the artifact - vs. doing the work to build understanding
-- Hypothesis: the hardest targets / messiest CONOPS will require human-AI collaboration, not vibing
-- Reference: [Method VR (local notes)](extras/Method%20VR.md)
-
----
-
-## Method VR scaffolding demo
-
-- Scaffold a new VR project from scratch, projected from the instructor laptop
-- Project structure (single git repo at the project root):
-	- `target/` - source code or artifacts under analysis
-	- `work/` - scripts, helper tools, intermediate investigation artifacts
-	- `wiki/` - finished and in-progress nuggets of understanding
-- `AGENTS.md` / `CLAUDE.md` - describe goal, target, and project structure so the AI starts grounded
-- Three parallel views: editor (VSCode) + Obsidian + AI harness (Claude Code / OpenCode)
-- One full cycle: ask → AI investigates → write to wiki → human reviews / corrects / grounds claims in source
+- TODO: go over this slide
+- when to prefer one provider / model / harness over another
+- Set up an MCP in Cursor
+- Set up Claude or Opencode
+- LLM On Command Line
+- Claude
+- Claude can refer to both an AI model and an AI tool
+- Analysis-focused; using skills
+- ToB skills, etc.
+- OpenClaw
 
 ---
 
 ## Skill install + play time
 
-- Install harness skills from [Daniel's VR starter kit](<extras/Daniel's VR starter kit.md>)
+- Watch video: [Don't Build Agents, Build Skills Instead - Barry Zhang & Mahesh Murag, Anthropic](https://www.youtube.com/watch?v=CEvIs9y1uog)
+- Install harness skills from [Daniel's VR starter kit](<extras/Daniel's VR starter kit.md>) or some other skill repo
 	- `superpowers` (general workflow + brainstorming skills) - github.com/obra/superpowers
 	- ToB security skill: `audit-context-building` - github.com/trailofbits/skills
 	- Optionally browse the rest: `c-review`, `differential-review`, `semgrep-rule-creator`, `variant-analysis`, etc.
@@ -402,11 +431,12 @@ May 2026
 ## SKILL creation exercise
 
 - Now write your own `SKILL.md`
-- Two flavors:
+- Ideas:
 	- **Workflow capture** - you found something useful during play; write it up so the AI (and others) can reuse it
 	- **Tool wrapper** - wrap a tool or script you want exposed to the AI
-- Closes the loop with Method VR's "capture for compounding" - the goal is reusable practice, not one-off scripts
+	- Write a skill like my `/dloffre-claude-setup` skill
 - Reference: [skill-creator (Anthropic)](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
+- Reference: anthropic skill building doc TODO
 
 ---
 
@@ -414,18 +444,6 @@ May 2026
 
 ---
 
-## Play time: beyond Cursor; MCP, Claude, Copilot
-
-- Set up an MCP in Cursor
-- Set up Claude or Opencode
-- LLM On Command Line
-- Claude
-- Claude can refer to both an AI model and an AI tool
-- Analysis-focused; using skills
-- ToB skills, etc.
-- OpenClaw
-
----
 
 ## Jupyter exercise 03 MCP: It's Just JSON-RPC
 
@@ -438,6 +456,37 @@ May 2026
 - Take everything you've learned this week so far and apply it to your project
 - Plan, scaffold, or begin implementation depending on where you are
 - Use the rest of the day to make real progress; ask for help freely
+
+---
+
+## Aside: Method VR - VR with AI in the thinking loop
+
+- A different style of AI/VR: human + AI co-construct understanding of the target through collaboration
+- VR is understanding a target well enough to break it. **Understanding compounds; findings do not.** The shareable artifact is the understanding itself
+- Two dividing lines:
+	- *Is the AI in the thinking loop with you?* - vs. AI as a function call you throw code at
+	- *Are you vibing?* - only inspecting behavior, never the artifact - vs. doing the work to build understanding
+- Hypothesis: the hardest targets / messiest CONOPS will require human-AI collaboration, not vibing
+- Reference: [Method VR (local notes)](extras/Method%20VR.md)
+
+---
+
+## Method VR scaffolding live demo
+
+- Scaffold a new VR project from scratch, projected from the instructor laptop
+- Project structure (single git repo at the project root):
+	- `target/` - source code or artifacts under analysis
+	- `work/` - scripts, helper tools, intermediate investigation artifacts
+	- `wiki/` - finished and in-progress nuggets of understanding
+- `AGENTS.md` / `CLAUDE.md` - describe goal, target, and project structure so the AI starts grounded
+- Three parallel views: editor (VSCode) + Obsidian + AI harness (Claude Code / OpenCode)
+- One full cycle: ask → AI investigates → write to wiki → human reviews / corrects / grounds claims in source
+
+---
+## How good is AI at VR?
+
+- Optional video: [Black-hat LLMs - Nicholas Carlini, [un]prompted 2026](https://www.youtube.com/watch?v=1sd26pWhfmg)
+
 
 ---
 
@@ -481,7 +530,11 @@ May 2026
 
 ---
 
+
 ## Project ideas / datasets (if you don't have your own yet)
+
+
+TODO: is this slide needed?
 
 DataSets:
 
@@ -546,6 +599,7 @@ Tasks:
 - Project-funded second week
 - Full-time project work
 - Continue to use the cohort + instructor as a resource
+- TODO: feedback link
 
 ---
 
@@ -592,3 +646,5 @@ Tasks:
 ---
 
 # Fin
+
+
