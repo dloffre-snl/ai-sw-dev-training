@@ -18,15 +18,13 @@ May 2026
 
 # TOC
 
-- TODO: linkify these
-- Day 1 - Frontier AI tools 101: vibe coding → AI-assisted SWE
-- Day 2 - Engineering discipline: prompts, specs, code that lasts
-- Day 3 - Method VR + skills you can take home
-- Day 4 - Security/attacks; project work
-- Day 5 - Catch-up + project time
-- Week 2 - Project deep-dive
-- Optional topics
-- Other resources
+- [Day 1 - Frontier AI tools 101: vibe coding → AI-assisted SWE](#day-1)
+- [Day 2 - Engineering discipline: prompts, specs, code that lasts](#day-2)
+- [Day 3 - Method VR + skills you can take home](#day-3)
+- [Day 4 - Security/attacks; project work](#day-4)
+- [Day 5 - Catch-up + project time](#day-5)
+- [Week 2 - Project deep-dive](#week-2---project-deep-dive)
+- [Other resources](#other-resources)
 
 ---
 
@@ -120,9 +118,11 @@ May 2026
 
 - See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
-- TODO: Bonus content for those that finish early
-	- Push the boundaries of what an LLM can do on its own
-	- Implement ...
+- Bonus extensions if you finish early - push what an LLM can do on its own:
+	- **Web dashboard**: turn the script into a Flask/FastAPI app with PCAP upload, in-browser visualization, and filters by query type / source IP / time
+	- **Beyond DNS**: extend the parser to also surface HTTP host headers and TLS SNI; tab the visualization per protocol
+	- **Anomaly highlighting**: flag suspicious DNS patterns (high-entropy domains, very long FQDNs, fast-flux) and explain *why* in the UI
+	- **Live capture**: switch to a live network interface and auto-refresh the visualization as packets arrive
 
 ---
 
@@ -131,11 +131,36 @@ May 2026
 - What went well?
 - What went poorly?
 - Any interesting findings or tricks applied?
-- TODO: find a spot for the computerphile metr video as well as the METR plot inline in the slides
 
 ---
 
 ## Break
+
+---
+
+## METR: task length AI can handle
+
+![w:900](images/metr-time-horizons.png)
+
+- [Computerphile: AI's Version of Moore's Law?](https://www.youtube.com/watch?v=evSFeqTZdqs)
+
+<!--
+- The canonical "AI is improving fast" exhibit: 50%-reliability task length doubling roughly every 7 months
+- Source: metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+-->
+
+---
+
+## METR: Mythos preview update
+
+![w:900](images/metr-mythos.png)
+
+<!--
+- Latest update (May 2026): Claude Mythos preview pushes past 16-hour task horizons - the upper bound METR can currently measure
+- Caveat (METR's own): measurements above 16 hrs are unreliable with the current task suite; emphasize the trend, not the exact numbers
+- Live interactive plot: metr.org/time-horizons/ — refresh image before teaching if it's been a while
+-->
+
 
 ---
 
@@ -150,7 +175,13 @@ May 2026
 - Context / Tokens 
 
 <!--
-- TODO: include definitions of each of these here in the speaker notes
+- **Model / LLM**: the underlying neural network that produces text. Stateless function. Examples: GPT-5, Claude Opus 4.7, Gemini 3 Pro. The model itself doesn't run code, browse the web, or remember; the harness wraps those capabilities around it.
+- **Harness**: the application around the model that gives it tools, manages context, and runs the loop. Cursor, Claude Code, Copilot, ChatGPT — different harnesses can use the same model and behave very differently.
+- **Agent**: a model running in a loop with tools, deciding what to do next based on its own outputs. "AI assistant" with autonomy.
+- **Tool call**: a structured request from the model asking the harness to run a function on its behalf — read a file, run a shell command, do a web search. The harness executes and returns the result for the model to read on the next turn.
+- **Skill**: a reusable instruction file (typically markdown with a description and steps) that the model loads when it matches a task. Lets you teach the agent a workflow once and have it follow it consistently.
+- **Prompt / System prompt**: prompt = what you write to the model. System prompt = the instructions sitting above your prompt that set the model's role and rules — usually authored by the harness vendor, sometimes by you (e.g. CLAUDE.md, AGENTS.md).
+- **Context / Tokens**: context = everything the model sees on a given turn (system prompt, conversation, tool outputs). Tokens = the units the model reads/writes (~3-4 chars each). The context window is finite; once you fill it, the model loses earlier content.
 -->
 
 ---
@@ -229,15 +260,7 @@ May 2026
 
 # Day 2
 
-![Day-2-image](images/Day2.png)
-
-<!--
-TODO: drop in a meme/AI image here that maps to Day 2 themes - prompt
-engineering, building code to last, moving from vibes to disciplined SWE.
-Suggestions: a "Drake" meme (vibe coding rejected / prompt engineering
-embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
-"expectation vs reality of AI-generated code" image. Save as images/Day2.png.
--->
+![h:500](images/Day2.png)
 
 ---
 
@@ -245,9 +268,29 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 ---
 
+## Best practices I encode in CLAUDE.md
+
+- **No speculative features** - don't add what isn't asked for; YAGNI
+- **No premature abstraction** - rewrite three times before extracting a helper
+- **Replace, don't deprecate** - old code goes when new code arrives; no backwards-compat shims
+- **Fail fast** - clear errors with context, never swallow exceptions
+- **Verify at every level** - linters, type checkers, tests, structure-aware tools (ast-grep, LSP)
+- **Test behavior, not implementation** - if a refactor breaks tests but not code, the tests were wrong
+- **Mock boundaries, not logic** - only mock slow / non-deterministic / external things
+- **Finish the job** - handle visible edges, clean up what you touched, don't gold-plate
+- **Bias toward action** - state your assumption and move; ask before destructive or interface-defining choices
+
+<!--
+- I display my full CLAUDE.md alongside this slide; these are the high-level rules that drive most of my AI-assisted coding behavior
+- The full file has more (hard limits on function size / complexity / params, comments policy, commit hygiene, etc.) but these are the ones I'd surface first
+- **YAGNI** = "You Aren't Gonna Need It." Old XP/agile rule: don't build a feature, abstraction, config flag, or generality until something concrete actually needs it. Speculative scaffolding ages badly, gets used in ways you didn't predict, and adds maintenance burden the moment it lands.
+- Open invitation: students should leave with a draft of their own CLAUDE.md / AGENTS.md by end of week
+-->
+
+---
+
 ## Proper software engineering with AI
 
-- TODO: this list is maybe outdated / I don't know what to say to it. Instead, I should make this a list of my best practices (source: my CLAUDE.md / AGENTS.md - *don't* preemptively abstract, fail-fast errors, no speculative features, replace don't deprecate, etc.)
 - TODO: include another software engineering video here
 - Prompt Engineering Lessons
 - Spec-driven engineering
@@ -308,6 +351,8 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 ---
 
 # Day 3
+
+![h:500](images/Day3.png)
 
 ---
 
@@ -402,6 +447,8 @@ embraced), the "Distracted Boyfriend" (dev / vibes / proper SWE), or any
 
 # Day 4
 
+![h:500](images/Day4.png)
+
 ---
 
 ## Opsec, security risks, mitigations
@@ -466,6 +513,8 @@ Tasks:
 
 # Day 5
 
+![h:500](images/Day5.png)
+
 ---
 
 ## Catch-up + project time
@@ -488,25 +537,15 @@ Tasks:
 
 # Week 2 - Project deep-dive
 
-- Project-funded second week
-- Full-time project work
-- Continue to use the cohort + instructor as a resource
+![h:500](images/Week2.png)
 
 ---
 
-# Optional topics
+## Week 2 - Project deep-dive
 
-<!--
-Future overflow / deep-dive topics that don't fit into the day flow.
-Items previously here have been folded in:
-  - Code Mode vs MCP -> Day 3, MCP Jupyter aside
-  - Superpowers brainstorming -> Day 3, Skill install + play
-  - Daniel's CLAUDE.md / AGENTS.md best practices -> Day 2, Proper SWE slide (source material for the best-practices list)
-  - API access vs OAuth access -> Day 4, Opsec slide
-  - OpenClaw -> Day 3, Play time slide
--->
-
-- (placeholder - drop deep-dive topics here as they come up)
+- Project-funded second week
+- Full-time project work
+- Continue to use the cohort + instructor as a resource
 
 ---
 
