@@ -328,20 +328,23 @@ Pie chart of value from this course:
 
 ---
 
-
 ## Third Exercise: Building Code to Last
 
-- TODO: flesh out this exercise
-- Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
-- Let’s imagine you are no longer working on a one-day piece of code that we are going to throw away.
-- Instead, let’s say you are collaborating on a project with other people, and you are making code that you will have to maintain
-- Does someone want to volunteer their class project?
-- What would you do to help make AI-developed coding manageable?
-- Dumb Idea: you are making code you have to maintain; good SWE practices, testing, etc.; maybe an exercise where you have to work as a class and delegate pieces (maybe 10 people)
-- For the third exercise, we will try this out as a class!
-- Everyone pull this git repo: blah
-- (What should the joint project be?)
-- First we will discuss a plan to delegate different pieces/tasks
+- **Start point**: you each built a PCAP/DNS parser yesterday. The class now has 10 incompatible implementations of the same thing
+- **New goal**: create one shared multi-protocol packet analyzer that the whole class will maintain together.
+- **First 15 minutes, as a class**: agree on the contract - parser interface, output schema, repo layout, AGENTS.md. Nothing else gets built until this lands.
+- **Each student claims a piece**: a protocol module (DNS, HTTP, TLS-SNI, SMB, ICMP, DHCP, ARP, ...) or an infra slot (dispatcher, web UI, test fixtures, CI).
+- **Every module ships with tests**, follows the agreed interface, and reads well enough that another student could extend it tomorrow.
+
+---
+
+## Third Exercise: what we're building
+
+- **Input**: any PCAP file, dropped in via CLI or web upload.
+- **Output**: one unified report - per-protocol breakdowns in tabbed views (DNS queries, HTTP requests, TLS SNI, SMB sessions, ICMP, ...).
+- **Architecture**: `parsers/<protocol>/` modules behind a shared `Parser` interface, dispatched by a thin core, rendered by one web UI.
+- **Test corpus**: shared PCAPs from wireshark.org samplecaptures - if your module breaks on a real capture, the whole dashboard breaks.
+- **Demo target (end of day)**: drop in `class-test.pcap`, watch all 10 protocol tabs populate, nobody's module crashes the others.
 
 ---
 
@@ -362,7 +365,10 @@ Pie chart of value from this course:
 
 ---
 
-## Third Exercise: Building Code to Last (continuation)
+## Third Exercise: Building Code to Last (discussion/continuation)
+
+- Once you had the project skeleton laid out, do you think sub agents could have done your module implementation autonomously?
+
 
 ---
 
