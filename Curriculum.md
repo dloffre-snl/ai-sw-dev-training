@@ -418,19 +418,28 @@ Pie chart of value from this course:
 - What has worked well, and what has not
 
 ---
-
 ## Play time: beyond Cursor; MCP, Claude, Codex
 
-- TODO: go over this slide
-- when to prefer one provider / model / harness over another
-- Set up an MCP in Cursor
-- Set up Claude or Opencode
-- LLM On Command Line
-- Claude
-- Claude can refer to both an AI model and an AI tool
-- Analysis-focused; using skills
-- ToB skills, etc.
-- OpenClaw
+- Cursor is great when you want the code to be your primary focus
+- A new approach has emerged recently: the agent harness TUI
+- Claude Code, Codex, OpenCode are the popular ones; Pi for hipsters
+	- Why might you prefer one provider / model / harness over another?
+	- What is OpenClaw and how is that different?
+- Exercise
+	- Set up Claude Code and/or Codex
+	- Set up an MCP in Cursor or ClaudeCode or Codex
+	- Play around with this style of agent interaction
+
+<!--
+Innovations of OpenClaw:
+1. persistent memory
+2. Higher level of abstraction - multiple workspaces rather than 1 project
+3. Soul .md
+4. Channels: Whatsapp/Telegram
+5. Skill-aware agent system
+6. Heartbeat / loop
+-->
+
 
 ---
 
@@ -454,7 +463,8 @@ Pie chart of value from this course:
 	- **Tool wrapper** - wrap a tool or script you want exposed to the AI
 	- Write a skill like my `/dloffre-claude-setup` skill
 - Reference: [skill-creator (Anthropic)](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
-- Reference: anthropic skill building doc TODO
+- Reference: [The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)
+
 
 ---
 
@@ -546,13 +556,20 @@ Pie chart of value from this course:
 
 ## Break
 
+
 ---
+
+## Your project: build time
+
+- Continue project work
+- Drop in for help / pair programming as needed
+- Surface roadblocks for the group - chances are someone else is hitting the same wall
+
+
+<!--
 
 
 ## Project ideas / datasets (if you don't have your own yet)
-
-
-TODO: is this slide needed?
 
 DataSets:
 
@@ -568,13 +585,9 @@ Tasks:
 - FuzzHarness for X
 - Control MineSweeper output
 
----
 
-## Your project: build time
+-->
 
-- Continue project work
-- Drop in for help / pair programming as needed
-- Surface roadblocks for the group - chances are someone else is hitting the same wall
 
 ---
 
