@@ -118,7 +118,7 @@ Pie chart of value from this course:
 
 ---
 
-## First exercise: Vibe Coding in Cursor
+## First Exercise: Vibe Coding in Cursor
 
 - See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
@@ -386,7 +386,7 @@ Pie chart of value from this course:
 
 - We used to have many points of alignment before the implementation phase, because the implementation phase was so costly
 - Now the implementation phase is only a couple minutes and so we dropped a bunch of touch points pre-implementation
-- But we have seen the need for additional additional touch points in review
+- But we have seen the need for additional touch points in review
 - Yet these additional touch points are on the wrong end of the lifecycle!
 - Optional video: [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment - Maggie Appleton, GitHub](https://www.youtube.com/watch?v=ClWD8OEYgp8) 
 
