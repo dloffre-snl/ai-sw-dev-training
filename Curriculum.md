@@ -536,16 +536,12 @@ Innovations of OpenClaw:
 
 ## Opsec, security risks, mitigations
 
-- TODO: flesh this slide out
-- Show abox / shirty / claudecode setup
 - Talk about what is allowed on SRN
-- One thing is copy/paste into Sandia AI
+- What the approval process is like
 - Two Concerns
   - CUI/OUO/sensitive data being sent to off-site models
   - Dev tools running malicious commands on your machine (like we just gave it permission to do)
-- Figure out how to access Shirty in this environment (SRN laptop?)
-- Talk about local models (roocode, continue.dev, cline)
-- API access vs OAuth access (which auth model lets you use which tools at Sandia)
+- Shirty, abox, isolation solutions
 
 ---
 
@@ -618,7 +614,7 @@ Tasks:
 
 ## End of week wrap-up
 
-- TODO: Feedback form link 
+- [Anonymous feedback form](https://forms.gle/4awa2KChaMixFHTB7)
   - fill out today if you're not here next week
   - fill out near the end of next week
 - What would you like to see different next week?
@@ -636,7 +632,7 @@ Tasks:
 - Project-funded second week
 - Full-time project work
 - Continue to use the cohort + instructor as a resource
-- TODO: feedback link
+- Please provide [anonymous feedback](https://forms.gle/4awa2KChaMixFHTB7)
 
 ---
 
