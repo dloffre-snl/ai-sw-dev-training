@@ -44,8 +44,7 @@ May 2026
 - My goal is to spend the first couple days getting you going and then treat this like a workshop
 - We will make time to chat about each person's project idea - let's collaborate, pair program, experiment together
 - We will discuss roadblocks and successes as a group 
-
-_Does someone mind keeping a notes doc with things that happened live that should have been in the course materials?_
+* _Is someone willing to keep a notes doc with things that happened live that should have been in the course materials?_
 
 <!-- 
 
@@ -379,8 +378,27 @@ Pie chart of value from this course:
 ---
 ## How development has changed
 
-- TODO: *build-time shrink / plan-time expand slides* - screenshots
+- We used to have many points of alignment before the implementation phase, because the implementation phase was so costly
+- Now the implementation phase is only a couple minutes and so we dropped a bunch of touch points pre-implementation
+- But we have seen the need for additional additional touch points in review
+- Yet these additional touch points are on the wrong end of the lifecycle!
 - Optional video: [Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment - Maggie Appleton, GitHub](https://www.youtube.com/watch?v=ClWD8OEYgp8) 
+
+
+---
+
+
+## How development has changed (1)
+
+
+![width:800px](./images/appleton1.png)
+
+
+---
+
+## How development has changed (2)
+
+![width:800px](./images/appleton2.png)
 
 ---
 
