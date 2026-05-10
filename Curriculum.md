@@ -120,7 +120,7 @@ Pie chart of value from this course:
 
 ## First Exercise: Vibe Coding in Cursor
 
-- See [Exercise 1](cursor_exercises/1-VibeCoding.pptx)
+- See [Exercise 1](cursor_exercises/1-VibeCoding.pdf)
 - “Write a library for parsing network packet captures in Python. Include a script that can take in a PCAP argument, and will display info about all DNS packets parsed to the terminal.”
 - Bonus extensions if you finish early - push what an LLM can do on its own:
 	- **Web dashboard**: turn the script into a Flask/FastAPI app with PCAP upload, in-browser visualization, and filters by query type / source IP / time
@@ -243,7 +243,7 @@ Pie chart of value from this course:
 
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
-- See [Exercise 2](cursor_exercises/2-BeyondVibes.pptx)
+- See [Exercise 2](cursor_exercises/2-BeyondVibes.pdf)
 - Build an interactive call graph visualizer for x86 binaries
 
 ---
@@ -545,10 +545,10 @@ Innovations of OpenClaw:
 
 ---
 
-## Trevor slides
+## AI Threat Model
 
-- TODO: figure out how to handle Trevor's slides
-- [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) by Trevor LaPay
+- [Selected introductory slides](./extras/tlapay-selected.pdf) from Trevor LaPay
+	- Full presentation: [AI Threat Intel 2026](https://sandialabs-my.sharepoint.com/:p:/r/personal/dloffre_sandia_gov/Documents/AI%20Threat%20Intel%20-%20tlapay.pptx?d=w1b929a826d3b467faf6bb035233b843b&csf=1&web=1&e=bzGVJc) 
 
 ---
 
