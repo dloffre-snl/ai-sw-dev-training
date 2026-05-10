@@ -6,3 +6,8 @@ langchain_openai
 sentence_transformers
 mcp
 mlx-lm
+pydantic
+requests
+beautifulsoup4
+aiohttp
+jinja2

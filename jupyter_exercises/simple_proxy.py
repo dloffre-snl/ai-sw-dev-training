@@ -113,8 +113,6 @@ class LLMProxyHandler(BaseHTTPRequestHandler):
             resp = urlopen(req)
             status = resp.status
             resp_headers = dict(resp.headers)
-            if 'content-type' in resp_headers and resp_headers['content-type'] == 'text/event-stream'
-                import pdb; pdb.set_trace()
             resp_body = resp.read()
         except HTTPError as e:
             status = e.code
