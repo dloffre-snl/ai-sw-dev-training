@@ -59,8 +59,7 @@ May 2026
 
 * I will hand out 10 parking passes to each student
 * Each pass is only good for _one day_ - you must throw away and use a new parking pass each day
-* Fill out the date, start and end time, and 
-	* 
+* Fill out each day individually, start and end time, and Issued by: `SNL`
 * Let's do this now so that passes are not accidentally reused!
 
 
