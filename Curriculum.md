@@ -55,6 +55,17 @@ May 2026
 
 ---
 
+## Let's handle the parking situation
+
+* I will hand out 10 parking passes to each student
+* Each pass is only good for _one day_ - you must throw away and use a new parking pass each day
+* Fill out the date, start and end time, and 
+	* 
+* Let's do this now so that passes are not accidentally reused!
+
+
+---
+
 ## Caveat
 
 Pie chart of value from this course:
