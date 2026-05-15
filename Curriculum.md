@@ -57,10 +57,11 @@ May 2026
 
 ## Let's handle the parking situation
 
-* I will hand out 10 parking passes to each student
-* Each pass is only good for _one day_ - you must throw away and use a new parking pass each day
-* Fill out each day individually, start and end time, and Issued by: `SNL`
-* Let's do this now so that passes are not accidentally reused!
+- I will hand out 10 parking passes to each student
+- Each pass is only good for _one day_ - you must throw away and use a new parking pass each day
+- Fill out each day individually, start and end time, and Issued by: `SNL`
+- Let's do this now so that passes are not accidentally reused!
+* Also: door access. Let's have a rotation of 1 person each day who is the door helper to let people in/out. We can set up a signal chat for easy communication.
 
 
 ---
@@ -85,6 +86,7 @@ Pie chart of value from this course:
 - Conflicting perspectives
 	- **Google**: ~75% of new code is AI-generated, up from 25% 18 months prior ([Sundar Pichai, early 2026](https://www.humanreadable-ai.com/google-ai-generated-code-explained/))
 	- [Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford](https://www.youtube.com/watch?v=tbDDYKRFjhk)
+- I want you to make an _informed decision_ about how you want to engage or not engage with AI
 
 <!--
 
