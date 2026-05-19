@@ -442,11 +442,6 @@ Pie chart of value from this course:
 - A new approach has emerged recently: the agent harness TUI
 - Claude Code, Codex, OpenCode are the popular ones; Pi for hipsters
 	- Why might you prefer one provider / model / harness over another?
-	- What is OpenClaw and how is that different?
-- Exercise
-	- Set up Claude Code and/or Codex
-	- Set up an MCP in Cursor or ClaudeCode or Codex
-	- Play around with this style of agent interaction
 
 ---
 
@@ -454,8 +449,8 @@ Pie chart of value from this course:
 ## Exercise: Binary Triage CLI
 
 - **Tool**: Claude Code or Codex (your choice)
-- **Build**: a CLI tool that takes a binary path and produces a one-page triage summary
-- **Wrap these tools**: `file`, `strings`, `readelf`, `nm`, `objdump`, `binwalk`
+- **Build**: a CLI tool that takes a binary and produces a one-page triage summary
+- **Wrap tools like**: `file`, `strings`, `readelf`, `nm`, `objdump`, `binwalk`
 - **Output**: structured summary -- file type, architecture, linked libraries, interesting strings, sections
 - Build it entirely through the TUI agent: describe what you want, iterate, let the agent run and test
 * Hold on to this tool -- you'll use it in the next exercise
@@ -469,22 +464,36 @@ Pie chart of value from this course:
 
 ---
 
-## Optional Exercise: Recon Agent (Claude Agent SDK)
+## Optional Exercise: Custom Agent, Part 1 (Claude Agent SDK)
 
-- **Goal**: build an interactive binary analysis agent using the Claude Agent SDK
-- **How it works**: user provides a binary path, asks questions, the agent calls tools to investigate
-- **What you're building**: define tools with `@tool`, bundle them into an MCP server with `create_sdk_mcp_server()`, run the agent with `query()`
-- **Start from**: your triage CLI -- you already know what tools to expose and what useful output looks like
-- Your tools are exposed as an MCP server -- same protocol from Jupyter exercise 03, now you're building one
+- **Goal**: build a chat agent with a web UI using the Claude Agent SDK
+- **What you're building**: a simple web app where you chat with Claude -- configure options, call `query()`, stream responses to the browser
+- No custom tools, no special domain -- just get the agent loop working end to end
 - Reference: [Claude Agent SDK docs](https://code.claude.com/docs/en/agent-sdk/overview)
 
 <!--
-- This is the "build your own agent" exercise -- understanding what Claude Code is doing under the hood
-- Key pattern: @tool decorator wraps shell commands (readelf, strings, etc.), create_sdk_mcp_server bundles them, query() runs the agent loop
-- The SDK handles tool orchestration for you -- students define tools and let the agent decide when to call them
-- Students who did the triage CLI already have the mental model of what tools to define and what to ask
-- Stretch goals: add a disassemble_function tool, add memory/context about prior findings, add a "write report" tool
-- For students who struggle with the SDK, pair them with someone who finished early
+- This is "get the agent loop working" -- minimal code, maximum payoff
+- Students should have a working web chat agent in a small amount of Python + a simple frontend
+- Key learning: ClaudeAgentOptions, query(), message streaming, wiring it to a web framework (Flask/FastAPI)
+- If students get stuck, the SDK docs have a quickstart example they can adapt
+-->
+
+---
+
+## Optional Exercise: Custom Agent, Part 2 (Custom Tools + MCP)
+
+- **Goal**: turn your generic chat agent into a binary recon agent by adding custom tools
+- **What you're adding**: define tools with `@tool` (wrapping `file`, `strings`, `readelf`, etc.), bundle them with `create_sdk_mcp_server()`
+- **Start from**: your triage CLI -- you already know what tools to expose and what useful output looks like
+- Your tools are exposed as an MCP server -- same protocol from Jupyter exercise 03, now you're building one
+- **Stretch**: add a `disassemble_function` tool, a `write_report` tool, or wire in your triage CLI as a single tool
+
+<!--
+- This is "extend the agent with custom tools" -- builds on part 1
+- Key pattern: @tool decorator wraps shell commands, create_sdk_mcp_server bundles them, pass to ClaudeAgentOptions.mcp_servers
+- Students who did the triage CLI already have the mental model of what tools to define from the earlier exercise
+- The MCP connection: they learned the protocol in Jupyter 03, now they're building an MCP server
+- For students who struggle, pair them with someone who finished early
 -->
 
 ---
