@@ -204,19 +204,23 @@ Pie chart of value from this course:
 
 ---
 
+## Context engineering
+
+- Context window
+	- What is it?
+	- How do you put things in it?
+	- What happens when it gets full?
+- Context window management
+	- handoff document
+	- `/clear` `/compact`
+	- when to start new sessions
+
+
+---
 ## Jupyter exercise 02 Tool Calls: What They Actually Are
 
 ---
 
-## Discussion: Regaining control of the output
-
-- What kinds of tasks can an LLM perform well?
-	- Defining the task precisely, leaving no ambiguity
-- What size of task can an LLM perform well?
-	- Scoping down and being incremental
-- What tricks have you tried to get better code out of the LLM?
-
----
 
 ## AI-Assisted Development Tips
 
@@ -238,25 +242,21 @@ Pie chart of value from this course:
 
 ---
 
-## Context engineering
-
-- Context window
-	- What is it?
-	- How do you put things in it?
-	- What happens when it gets full?
-- Context window management
-	- handoff document
-	- `/clear` `/compact`
-	- when to start new sessions
-
-
----
 
 
 ## Second Exercise: Beyond Vibes - AI-Assisted Development
 
 - See [Exercise 2](cursor_exercises/2-BeyondVibes.pdf)
 - Build an interactive call graph visualizer for x86 binaries
+
+---
+## Discussion: Regaining control of the output
+
+- What kinds of tasks can an LLM perform well?
+	- Defining the task precisely, leaving no ambiguity
+- What size of task can an LLM perform well?
+	- Scoping down and being incremental
+- What tricks have you tried to get better code out of the LLM?
 
 ---
 ## Your project: introductions
@@ -269,11 +269,14 @@ Pie chart of value from this course:
 
 ---
 
-## MVP live planning demo
+## Your project: planning + MVP design
 
-- Does someone want to volunteer what their class project is?
-- Let's open up ChatGPT and do an MVP design session
-	- Have it output an initial prompt for Cursor/Claude
+- Each of you, with an AI co-designer: sketch your MVP
+	- What is the smallest version of the project that proves the idea?
+	- What inputs / outputs?
+	- What's explicitly out of scope for the MVP?
+- Output: a starting prompt for Cursor / Claude
+- We'll discuss volunteers' MVPs as a group
 
 ---
 
@@ -287,6 +290,13 @@ Pie chart of value from this course:
 # Day 2
 
 ![h:500](images/Day2.png)
+
+---
+## MVP live planning demo
+
+- Does someone want to volunteer what their class project is?
+- Let's open up ChatGPT and do an MVP design session
+	- Have it output an initial prompt for Cursor/Claude
 
 ---
 
@@ -384,16 +394,6 @@ Pie chart of value from this course:
 
 ---
 
-## Your project: planning + MVP design
-
-- Each of you, with an AI co-designer: sketch your MVP
-	- What is the smallest version of the project that proves the idea?
-	- What inputs / outputs?
-	- What's explicitly out of scope for the MVP?
-- Output: a starting prompt for Cursor / Claude
-- We'll discuss volunteers' MVPs as a group
-
----
 ## How development has changed
 
 - We used to have many points of alignment before the implementation phase, because the implementation phase was so costly
@@ -450,17 +450,6 @@ Pie chart of value from this course:
 
 ---
 
-## What is OpenClaw?
-
-- Open source fork of Claude Code
-- Persistent memory across sessions
-- Higher level of abstraction: multiple workspaces, not just one project
-- Soul.md: global identity file (like CLAUDE.md but for _you_)
-- Channels: WhatsApp, Telegram integration
-- Skill-aware agent system
-- Heartbeat / loop: agent can run autonomously on a schedule
-
----
 
 ## Exercise: Binary Triage CLI
 
@@ -525,6 +514,18 @@ Pie chart of value from this course:
 
 ---
 
+## What is OpenClaw?
+
+- Open source fork of Claude Code
+- Persistent memory across sessions
+- Higher level of abstraction: multiple workspaces, not just one project
+- Soul.md: global identity file (like CLAUDE.md but for _you_)
+- Channels: WhatsApp, Telegram integration
+- Skill-aware agent system
+- Heartbeat / loop: agent can run autonomously on a schedule
+
+---
+
 ## Break
 
 ---
@@ -541,6 +542,17 @@ Pie chart of value from this course:
 - Take everything you've learned this week so far and apply it to your project
 - Plan, scaffold, or begin implementation depending on where you are
 - Use the rest of the day to make real progress; ask for help freely
+
+---
+
+
+## End of day wrap-up
+
+---
+
+# Day 4
+
+![h:500](images/Day4.png)
 
 ---
 
@@ -572,16 +584,6 @@ Pie chart of value from this course:
 
 - Optional video: [Black-hat LLMs - Nicholas Carlini, [un]prompted 2026](https://www.youtube.com/watch?v=1sd26pWhfmg)
 
-
----
-
-## End of day wrap-up
-
----
-
-# Day 4
-
-![h:500](images/Day4.png)
 
 ---
 
