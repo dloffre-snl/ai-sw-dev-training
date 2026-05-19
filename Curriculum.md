@@ -448,16 +448,55 @@ Pie chart of value from this course:
 	- Set up an MCP in Cursor or ClaudeCode or Codex
 	- Play around with this style of agent interaction
 
+---
+
+## What is OpenClaw?
+
+- Open source fork of Claude Code
+- Persistent memory across sessions
+- Higher level of abstraction: multiple workspaces, not just one project
+- Soul.md: global identity file (like CLAUDE.md but for _you_)
+- Channels: WhatsApp, Telegram integration
+- Skill-aware agent system
+- Heartbeat / loop: agent can run autonomously on a schedule
+
+---
+
+## Exercise: Binary Triage CLI
+
+- **Tool**: Claude Code or Codex (your choice)
+- **Build**: a CLI tool that takes a binary path and produces a one-page triage summary
+- **Wrap these tools**: `file`, `strings`, `readelf`, `nm`, `objdump`, `binwalk`
+- **Output**: structured summary -- file type, architecture, linked libraries, interesting strings, sections
+- Build it entirely through the TUI agent: describe what you want, iterate, let the agent run and test
+* Hold on to this tool -- you'll use it in the next exercise
+
 <!--
-Innovations of OpenClaw:
-1. persistent memory
-2. Higher level of abstraction - multiple workspaces rather than 1 project
-3. Soul .md
-4. Channels: Whatsapp/Telegram
-5. Skill-aware agent system
-6. Heartbeat / loop
+- The point is getting students to experience the TUI agent workflow, not the triage tool itself
+- They should be describing intent and reviewing output, not writing code by hand
+- If students finish early, have them add: entropy analysis, YARA rule matching, auto-detect packed binaries
+- Codex works too: paste the same prompt, compare the workflow difference
 -->
 
+---
+
+## Optional Exercise: Recon Agent (Claude Agent SDK)
+
+- **Goal**: build an interactive binary analysis agent using the Claude Agent SDK
+- **How it works**: user provides a binary path, asks questions, the agent calls tools to investigate
+- **What you're building**: define tools with `@tool`, bundle them into an MCP server with `create_sdk_mcp_server()`, run the agent with `query()`
+- **Start from**: your triage CLI -- you already know what tools to expose and what useful output looks like
+- Your tools are exposed as an MCP server -- same protocol from Jupyter exercise 03, now you're building one
+- Reference: [Claude Agent SDK docs](https://code.claude.com/docs/en/agent-sdk/overview)
+
+<!--
+- This is the "build your own agent" exercise -- understanding what Claude Code is doing under the hood
+- Key pattern: @tool decorator wraps shell commands (readelf, strings, etc.), create_sdk_mcp_server bundles them, query() runs the agent loop
+- The SDK handles tool orchestration for you -- students define tools and let the agent decide when to call them
+- Students who did the triage CLI already have the mental model of what tools to define and what to ask
+- Stretch goals: add a disassemble_function tool, add memory/context about prior findings, add a "write report" tool
+- For students who struggle with the SDK, pair them with someone who finished early
+-->
 
 ---
 
