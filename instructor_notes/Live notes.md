@@ -22,3 +22,5 @@ git clone https://github.com/dloffre-snl/ai-sw-dev-training.git
 * for each of the non-jupyter exercises, having a post-exercise wrap-up would be useful
 	* I could present my solution to each exercise
 	* it would be nice to know what I want the student to get out of each exercise and have a way to know whether they got it or not
+* for the jupyter exercises, give a lessons learned / key point as a group
+* 
