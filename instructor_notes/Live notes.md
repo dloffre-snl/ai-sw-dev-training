@@ -23,4 +23,13 @@ git clone https://github.com/dloffre-snl/ai-sw-dev-training.git
 	* I could present my solution to each exercise
 	* it would be nice to know what I want the student to get out of each exercise and have a way to know whether they got it or not
 * for the jupyter exercises, give a lessons learned / key point as a group
-* 
+
+
+# other TODOs / Reminders
+
+- new module: when creating a complex solution you now have a choice between probabilistic computation and deterministic. an impactful decision is which components are probabilistic and which are deterministic
+  - provide example: Jude's json schema for oscope vs markdown output
+
+
+
+

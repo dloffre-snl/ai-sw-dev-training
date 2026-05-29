@@ -109,3 +109,9 @@ A talk-length cut (~7 slides + intro/outro):
 - Should the deck steal slides from the full Curriculum.md, or be standalone?
 - Confirm exactly which two Appleton images get used (and on which slide — #4, #5, or both)
 - Decide whether CLAUDE.md lives only under #5 or gets a callback under #2 (alignment)
+
+
+# TODOs / Reminders
+
+- include method VR call out?
+- learn best practices on frontier models instead of the other way around
