@@ -38,3 +38,8 @@ Source: `~/Downloads/SNL AI SW Dev Training Feedback (Responses) - Form Response
 3. Add more structured exercises; restructure Jupyter notebooks as do-then-discuss
 4. Add a short LLM/agent primer for less-experienced attendees
 5. Consider recording with chapter markers
+
+## Additional verbal feedback (1 respondent)
+
+- **Terminology slide**: needs rethinking and reordering; consider adding examples to each term
+- **Jupyter exercises**: purpose unclear for several; some felt arcane and disconnected from the course's forward-engineering-for-VR framing — tie each exercise back to that motivation or cut it

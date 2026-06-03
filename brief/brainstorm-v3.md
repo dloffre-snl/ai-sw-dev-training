@@ -8,7 +8,7 @@ Audience: people who have heard of Cursor / Claude Code but haven't internalized
 
 ## The single thread
 
-Coding is the busy work. What's *not* cheap anymore: deciding what to build, scoping it correctly, and knowing when it's done. The five lessons below are all corollaries of that shift.
+Coding is the busy work. What's *not* cheap anymore: deciding what to build, scoping it correctly, and knowing when it's done. The six lessons below are all corollaries of that shift.
 
 ---
 
@@ -86,18 +86,32 @@ Before the five lessons, set the stakes:
 
 ---
 
+## 6. There are now two kinds of computation — decide carefully which parts get which
+
+- **Statistical/probabilistic** (LLMs): great at fuzzy intent, natural-language parsing, judgment calls, code generation from a spec — but non-deterministic, expensive per call, fails in surprising ways
+- **Classical/deterministic** (traditional code, scripts, parsers, type systems): cheap, reproducible, testable, fast — but rigid; only handles what you explicitly programmed
+- Your job is to decide *carefully* which parts of your solution use which — and where the handoff happens
+- Wrong split = pain: LLM-in-a-loop for what should be a `for` loop = slow, flaky, expensive. Deterministic parser for free-form input = brittle, endless edge cases
+- Right split = leverage: LLM extracts structure from messy input → deterministic code processes it. Or: deterministic code fans the work out → LLM judges each piece
+- Heuristic: push as much as possible to the deterministic side; reserve the probabilistic side for things only it can do (ambiguity, intent, taste)
+- This is the architectural skill of the new era — not "use AI for everything" or "use AI for nothing"
+- Course tie-in: Day 3 — Agent SDK exercise (deterministic tools + probabilistic loop); Claude Code custom tools / skills as the boundary surface
+
+---
+
 ## Possible slide order
 
-A talk-length cut (~7 slides + intro/outro):
+A talk-length cut (~8 slides + intro/outro):
 
 1. Title + framing ("rough overview of good practices for agentic AI")
 2. **Why now** — METR + frontier-vs-open
 3. **Get the idea out of your head** — value frame
 4. **Your job is alignment** — role definition + Appleton lifecycle chart
 5. **Plan-time twice review-time saved** — the math + "vibe with a plan" + Appleton plan/build chart
-6. **Manage context like a resource** — sessions, scoping, handoffs
-7. **Skills + CLAUDE.md = your custom stack** — encode it once
-8. Closing: *"what would you build if coding was free?"*
+6. **Two kinds of computation** — probabilistic vs deterministic, pick the split deliberately *(open: slot here, or after context/skills as an architectural capstone?)*
+7. **Manage context like a resource** — sessions, scoping, handoffs
+8. **Skills + CLAUDE.md = your custom stack** — encode it once
+9. Closing — TBD by presenter
 
 ---
 
